@@ -1,5 +1,4 @@
-# Pet-Registration-Vaccination-System Rules
-Team Rules
+# Pet-Registration-Vaccination-System Repo Rules
 
 1. Never push directly to main. Always make a new branch for your task.
 
