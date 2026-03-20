@@ -2,7 +2,7 @@
 
 1. Never push directly to main. Always make a new branch for your task.
 
-2. Make a feature branch. Name it for your task 'app-[SECTION]', like app-[HOMEPAGE] or app-[PETINFO] .
+2. Make a feature branch. Name it for your task 'app-[SECTION]', like app-[HOMEPAGE] or app-[PET_INFO] .
 
 3. Work and commit on your branch. Save your changes often with clear messages.
 
