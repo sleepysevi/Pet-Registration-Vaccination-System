@@ -54,7 +54,7 @@ graph TB
         REG["PET CREATED"] --> GET["GET petID+PHONE"]
         GET --> MAKE["MAKE QR CODE"]
         MAKE --> SHOW["SHOW PRINT"]
-        UPD["UPDATE PHONE"] --> REGEN["REGEN QR"]
+        UPD["UPDATE PHONE"] --> REGEN["REGENERATE QR"]
     end
 
     %% CONNECTIONS
