@@ -23,7 +23,7 @@ graph TB
         PETS -->|"1:1 OPT"| LOST
     end
 
-    %% 3. BIGGER WORKFLOW
+    %% 3. WORKFLOW
     subgraph flow["MAIN WORKFLOW"]
         A[" LOGIN"] --> B[" DASHBOARD"]
         B --> C[" OWNER REG"]
@@ -34,7 +34,7 @@ graph TB
         G --> H[" LOST PET"]
     end
 
-    %% 4. BIGGER DATA FLOW
+    %% 4. DATA FLOW
     subgraph data["DATA FLOW"]
         INPUT[" FORM INPUT"] --> VALID[" C# CHECKS"]
         VALID --> DB[" DB SAVE"]
@@ -42,14 +42,14 @@ graph TB
         QUERY --> OUT[" DISPLAY"]
     end
 
-    %% 5. BIGGER ROLES
+    %% 5. ROLES
     subgraph roles["ROLE ACCESS"]
         LOGIN2["LOGIN OK"] --> CHK["CHECK ROLE"]
         CHK --> ADM[" ADMIN<br/>FULL ACCESS"]
         CHK --> STF[" STAFF<br/>REGISTER AND CRUD ONLY"]
     end
 
-    %% 6. BIGGER QR
+    %% 6. QR
     subgraph qr["QR SYSTEM"]
         REG["PET CREATED"] --> GET["GET petID+PHONE"]
         GET --> MAKE["MAKE QR CODE"]
@@ -65,7 +65,6 @@ graph TB
     F -.-> MAKE
     G -.-> QUERY
 
-    %% ENHANCED COLORS + BIGGER FONTS
     classDef ui fill:#E3F2FD,stroke:#1976D2,stroke-width:4px,color:#000000,font-size:14px
     classDef db fill:#F3E5F5,stroke:#7B1FA2,stroke-width:4px,color:#000000,font-size:14px
     classDef flow fill:#E8F5E8,stroke:#388E3C,stroke-width:4px,color:#000000,font-size:14px
