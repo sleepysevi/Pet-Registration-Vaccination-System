@@ -4,17 +4,17 @@
  -The main branch (main) must always stay stable. Only tested code goes here.  
  -Never push directly to main.
  -Always create a feature branch for your task.  
- -Branch naming format:  
-   feature/app-[SECTION]  
-   Example: feature/app-HOMEPAGE, feature/app-PET_INFO  
+ -Branch naming format:
+    feature/app-[SECTION]  
+    Example: feature/app-HOMEPAGE, feature/app-PET_INFO  
 
- 2. Commit Rules  
-  Write clear and descriptive commit messages.  
- -Format: <short description (minimum 4 words)>  
-   Example: feature: add login button functionality  
- Commit often to save progress.  
+ 3. Commit Rules  
+ -Write clear and descriptive commit messages.  
+ -Format: <short description (minimum 4 words)>
+    Example: feature: add login button functionality  
+    Commit often to save progress.  
 
- 3. Pull Request / Merge Rules  
+ 5. Pull Request / Merge Rules  
  -Push your branch to GitHub before opening a PR.  
  -Open a Pull Request (PR) when your task is done.  
  -PR must be reviewed by at least 1–2 teammates or the tech lead.  
