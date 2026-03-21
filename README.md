@@ -1,7 +1,7 @@
 # Pet-Registration-Vaccination-System Repo Rules
 
 1. Branching Rules
--The main branch (main) must always stay stable — only tested code goes here.
+-The main branch (main) must always stay stable. Only tested code goes here.
 -Never push directly to main.
 -Always create a feature branch for your task.
 -Branch naming format:
