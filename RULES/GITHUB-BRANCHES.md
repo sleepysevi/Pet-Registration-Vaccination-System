@@ -2,64 +2,55 @@
 graph TD
     ROOT[PetManagementSystem]
     
-    README[README.md]
-    MAIN[main.cs]
-    PROJ[PetManagementSystem.csproj]
+    ROOT --> README[README.md]
+    ROOT --> MAIN[main.cs]
+    ROOT --> PROJ[PetManagementSystem.csproj]
     
-    ASSETS[assets]
+    ROOT --> ASSETS[assets]
     ASSETS --> IMAGES[images]
     IMAGES --> LOGO[logo.png]
     IMAGES --> SCREENS[screenshots]
     ASSETS --> ICONS[icons]
     ASSETS --> UI[ui]
     
-    DOCS[docs]
+    ROOT --> DOCS[docs]
     DOCS --> API[api.md]
     DOCS --> DEPLOY[deployment.md]
     
-    MODELS[models]
+    ROOT --> MODELS[models]
     MODELS --> OWNER[Owner.cs]
     MODELS --> PET[Pet.cs]
     MODELS --> USER[User.cs]
     
-    REPOS[repositories]
+    ROOT --> REPOS[repositories]
     REPOS --> OWNERREPO[OwnerRepository.cs]
     REPOS --> PETREPO[PetRepository.cs]
     
-    CTRLS[controllers]
+    ROOT --> CTRLS[controllers]
     CTRLS --> OWNERCTRL[OwnerController.cs]
     CTRLS --> AUTHCTRL[AuthController.cs]
     
-    SRVS[services]
+    ROOT --> SRVS[services]
     SRVS --> AUTHSRV[AuthService.cs]
     SRVS --> QRSRV[QRService.cs]
     
-    VIEWS[views]
+    ROOT --> VIEWS[views]
     VIEWS --> LOGIN[LoginView.cs]
     VIEWS --> DASH[DashboardView.cs]
     VIEWS --> OWNERVIEW[OwnerView.cs]
     
-    DB[database]
+    ROOT --> DB[database]
     DB --> DBCONN[DBConnection.cs]
     DB --> SCHEMA[schema.sql]
     DB --> DBREADME[README.md]
     
-    ROOT --> README
-    ROOT --> MAIN
-    ROOT --> ASSETS
-    ROOT --> DOCS
-    ROOT --> MODELS
-    ROOT --> REPOS
-    ROOT --> CTRLS
-    ROOT --> SRVS
-    ROOT --> VIEWS
-    ROOT --> DB
-    ROOT --> PROJ
+    %% VERTICAL LAYOUT + BLACK TEXT
+    classDef root fill:#FFEBEE,stroke:#D32F2F,stroke-width:4px,color:#000000
+    classDef folder fill:#E3F2FD,stroke:#1976D2,stroke-width:3px,color:#000000
+    classDef file fill:#F5F5F5,stroke:#424242,stroke-width:2px,color:#000000
+    classDef core fill:#E8F5E8,stroke:#388E3C,stroke-width:3px,color:#000000
     
-    classDef folder fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    classDef file fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    classDef rootfile fill:#e8f5e8,stroke:#388e3c,stroke-width:3px
-    
+    class ROOT root
     class ASSETS,DOCS,MODELS,REPOS,CTRLS,SRVS,VIEWS,DB,IMAGES,ICONS,UI folder
     class OWNER,PET,USER,OWNERREPO,PETREPO,OWNERCTRL,AUTHCTRL,AUTHSRV,QRSRV,LOGIN,DASH,OWNERVIEW,DBCONN,SCHEMA,DBREADME,LOGO,SCREENS,API,DEPLOY file
-    class ROOT,README,MAIN,PROJ rootfile
+    class README,MAIN,PROJ core
