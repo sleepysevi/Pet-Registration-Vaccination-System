@@ -1,0 +1,149 @@
+﻿namespace AlagaTrackFrontEnd
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.sidebarTimer = new System.Windows.Forms.Timer(this.components);
+            this.panelSidebar = new System.Windows.Forms.Panel();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lblPageTitle = new System.Windows.Forms.Label();
+            this.btnHamburger = new System.Windows.Forms.Button();
+            this.panelContentHost = new System.Windows.Forms.Panel();
+            this.panelTop.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // sidebarTimer
+            // 
+            this.sidebarTimer.Interval = 15;
+            this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
+            // 
+            // panelSidebar
+            // 
+            this.panelSidebar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(217)))), ((int)(((byte)(236)))));
+            this.panelSidebar.Location = new System.Drawing.Point(0, 0);
+            this.panelSidebar.Name = "panelSidebar";
+            this.panelSidebar.Size = new System.Drawing.Size(0, 600);
+            this.panelSidebar.TabIndex = 0;
+            // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.button1);
+            this.panelTop.Controls.Add(this.lblPageTitle);
+            this.panelTop.Controls.Add(this.btnHamburger);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1000, 80);
+            this.panelTop.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::SectionLogins.Properties.Resources.Ellipse_2;
+            this.button1.Location = new System.Drawing.Point(910, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 75);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lblPageTitle
+            // 
+            this.lblPageTitle.AutoSize = true;
+            this.lblPageTitle.Font = new System.Drawing.Font("Segoe UI", 26F, System.Drawing.FontStyle.Bold);
+            this.lblPageTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(57)))), ((int)(((byte)(141)))));
+            this.lblPageTitle.Location = new System.Drawing.Point(86, 17);
+            this.lblPageTitle.Name = "lblPageTitle";
+            this.lblPageTitle.Size = new System.Drawing.Size(294, 70);
+            this.lblPageTitle.TabIndex = 1;
+            this.lblPageTitle.Text = "Dashboard";
+            this.lblPageTitle.Click += new System.EventHandler(this.lblPageTitle_Click);
+            // 
+            // btnHamburger
+            // 
+            this.btnHamburger.FlatAppearance.BorderSize = 0;
+            this.btnHamburger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHamburger.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.btnHamburger.Image = global::SectionLogins.Properties.Resources.Rectangle_6;
+            this.btnHamburger.Location = new System.Drawing.Point(16, 20);
+            this.btnHamburger.Name = "btnHamburger";
+            this.btnHamburger.Size = new System.Drawing.Size(55, 35);
+            this.btnHamburger.TabIndex = 0;
+            this.btnHamburger.UseVisualStyleBackColor = true;
+            this.btnHamburger.Click += new System.EventHandler(this.btnHamburger_Click);
+            // 
+            // panelContentHost
+            // 
+            this.panelContentHost.BackColor = System.Drawing.Color.Transparent;
+            this.panelContentHost.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContentHost.ForeColor = System.Drawing.Color.Transparent;
+            this.panelContentHost.Location = new System.Drawing.Point(0, 80);
+            this.panelContentHost.Name = "panelContentHost";
+            this.panelContentHost.Size = new System.Drawing.Size(1000, 520);
+            this.panelContentHost.TabIndex = 2;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.panelContentHost);
+            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.panelSidebar);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AlagaTrack";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Timer sidebarTimer;
+        private System.Windows.Forms.Panel panelSidebar;
+        private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Label lblPageTitle;
+        private System.Windows.Forms.Button btnHamburger;
+        private System.Windows.Forms.Panel panelContentHost;
+        private System.Windows.Forms.Button button1;
+    }
+}
+

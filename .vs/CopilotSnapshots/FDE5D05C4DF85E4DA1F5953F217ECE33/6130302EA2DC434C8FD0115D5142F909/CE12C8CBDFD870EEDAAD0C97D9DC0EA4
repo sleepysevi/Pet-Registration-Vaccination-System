@@ -1,0 +1,104 @@
+﻿using System;
+using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace SectionLogins
+{
+    partial class LoginPage
+    {
+        private IContainer components = null;
+
+        // Form controls
+        public TextBox EnterUsernameTextBox;
+        public TextBox EnterPasswordTextBox;
+        public Panel EnterUsernamePanel;
+        public Panel EnterPasswordPanel;
+        public Button LogIns;
+        public Label ForgotPassword;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            components = new Container();
+            EnterUsernameTextBox = new TextBox();
+            EnterPasswordTextBox = new TextBox();
+            EnterUsernamePanel = new Panel();
+            EnterPasswordPanel = new Panel();
+            LogIns = new Button();
+            ForgotPassword = new Label();
+
+            // EnterUsernamePanel
+            EnterUsernamePanel.BackColor = System.Drawing.Color.White;
+            EnterUsernamePanel.Controls.Add(EnterUsernameTextBox);
+            EnterUsernamePanel.Location = new System.Drawing.Point(100, 100);
+            EnterUsernamePanel.Name = "EnterUsernamePanel";
+            EnterUsernamePanel.Size = new System.Drawing.Size(200, 40);
+            EnterUsernamePanel.TabIndex = 0;
+
+            // EnterUsernameTextBox
+            EnterUsernameTextBox.Dock = DockStyle.Fill;
+            EnterUsernameTextBox.Name = "EnterUsernameTextBox";
+            EnterUsernameTextBox.PlaceholderText = "Username";
+            EnterUsernameTextBox.Size = new System.Drawing.Size(200, 40);
+            EnterUsernameTextBox.TabIndex = 0;
+
+            // EnterPasswordPanel
+            EnterPasswordPanel.BackColor = System.Drawing.Color.White;
+            EnterPasswordPanel.Controls.Add(EnterPasswordTextBox);
+            EnterPasswordPanel.Location = new System.Drawing.Point(100, 160);
+            EnterPasswordPanel.Name = "EnterPasswordPanel";
+            EnterPasswordPanel.Size = new System.Drawing.Size(200, 40);
+            EnterPasswordPanel.TabIndex = 1;
+
+            // EnterPasswordTextBox
+            EnterPasswordTextBox.Dock = DockStyle.Fill;
+            EnterPasswordTextBox.Name = "EnterPasswordTextBox";
+            EnterPasswordTextBox.PlaceholderText = "Password";
+            EnterPasswordTextBox.Size = new System.Drawing.Size(200, 40);
+            EnterPasswordTextBox.TabIndex = 1;
+
+            // LogIns
+            LogIns.BackColor = System.Drawing.Color.FromArgb(32, 47, 124);
+            LogIns.FlatStyle = FlatStyle.Flat;
+            LogIns.ForeColor = System.Drawing.Color.White;
+            LogIns.Location = new System.Drawing.Point(100, 220);
+            LogIns.Name = "LogIns";
+            LogIns.Size = new System.Drawing.Size(200, 40);
+            LogIns.TabIndex = 2;
+            LogIns.Text = "Login";
+            LogIns.UseVisualStyleBackColor = false;
+
+            // ForgotPassword
+            ForgotPassword.AutoSize = true;
+            ForgotPassword.ForeColor = System.Drawing.Color.FromArgb(32, 47, 124);
+            ForgotPassword.Location = new System.Drawing.Point(100, 270);
+            ForgotPassword.Name = "ForgotPassword";
+            ForgotPassword.Size = new System.Drawing.Size(100, 15);
+            ForgotPassword.TabIndex = 3;
+            ForgotPassword.Text = "Forgot Password?";
+
+            // LoginPage
+            AutoScaleDimensions = new System.Drawing.SizeF(7f, 15f);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(400, 400);
+            Controls.Add(ForgotPassword);
+            Controls.Add(LogIns);
+            Controls.Add(EnterPasswordPanel);
+            Controls.Add(EnterUsernamePanel);
+            Name = "LoginPage";
+            Text = "AlagaTrack - Login";
+            Shown += LoginPage_Shown;
+            Resize += (s, e) => OnResize(e);
+            ResumeLayout(false);
+            PerformLayout();
+        }
+    }
+}

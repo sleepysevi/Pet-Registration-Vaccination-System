@@ -1,0 +1,86 @@
+﻿namespace SectionLogins
+{
+    public static class UserSession
+    {
+        private static int _userID;
+        private static string _username = string.Empty;
+        private static string _role = string.Empty;
+        private static readonly object _lockObject = new object();
+
+        /// <summary>
+        /// Gets or sets the current user's ID.
+        /// </summary>
+        public static int UserID
+        {
+            get
+            {
+                lock (_lockObject)
+                {
+                    return _userID;
+                }
+            }
+            set
+            {
+                lock (_lockObject)
+                {
+                    _userID = value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the current user's username.
+        /// </summary>
+        public static string Username
+        {
+            get
+            {
+                lock (_lockObject)
+                {
+                    return _username;
+                }
+            }
+            set
+            {
+                lock (_lockObject)
+                {
+                    _username = value ?? string.Empty;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the current user's role.
+        /// </summary>
+        public static string Role
+        {
+            get
+            {
+                lock (_lockObject)
+                {
+                    return _role;
+                }
+            }
+            set
+            {
+                lock (_lockObject)
+                {
+                    _role = value ?? string.Empty;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Clears all session data.
+        /// </summary>
+        public static void Clear()
+        {
+            lock (_lockObject)
+            {
+                _userID = 0;
+                _username = string.Empty;
+                _role = string.Empty;
+            }
+        }
+    }
+}

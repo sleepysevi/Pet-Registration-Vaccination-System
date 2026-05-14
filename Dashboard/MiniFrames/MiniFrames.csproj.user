@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="ARShotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditARShotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditOwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditPetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditReportLostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EditStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LostPetDescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PetInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ReportLostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="QrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewOwnerPetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

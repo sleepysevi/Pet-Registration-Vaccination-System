@@ -1,0 +1,44 @@
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Windows.Forms;
+
+namespace AlagaTrack
+{
+    public class OwnerManager
+    {
+        public bool AddOwner(string name, string address, string contact)
+        {
+            try
+            {
+                using (var conn = DatabaseConfig.GetConnection())
+                {
+                    conn.Open();
+                    string query = "INSERT INTO owners (name, address, contactNumber) VALUES (@name, @address, @contact)";
+                    string query = "DELETE FROM owners WHERE ownerID = @id";
+                    
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@name", name);
+                        cmd.Parameters.AddWithValue("@address", address);
+                        cmd.Parameters.AddWithValue("@contact", contact);
+                        cmd.Parameters.AddWithValue("@id", ownerID);
+                        
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if {
+                    MessageBox.Show("Cannot delete owner, they still have pets registered." "Dependencies Error.);
+                }
+                    MessageBox.Show("Database Error: " + ex.Message);
+                }
+                
+                MessageBox.Show("Error adding owner: " + ex.Message);
+                return false;
+            }
+        }
+    }
+}

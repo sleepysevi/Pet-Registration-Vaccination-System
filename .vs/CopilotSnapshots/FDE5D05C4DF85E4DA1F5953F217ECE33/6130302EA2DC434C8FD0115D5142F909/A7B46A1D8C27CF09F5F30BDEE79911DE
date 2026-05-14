@@ -1,0 +1,148 @@
+﻿using System;
+using System.Windows.Forms;
+
+namespace SectionLogins
+{
+    public partial class Dashboard : Form
+    {
+        private const int SidebarCollapsedWidth = 0;
+        private const int SidebarExpandedWidth = 250;
+        private bool _isSidebarExpanded;
+        private Form? _activePage;
+        private SidebarForm? _sidebarForm;
+
+        public Dashboard()
+        {
+            InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            // Show logged-in username in title bar
+            string user = UserSession.Instance.Username ?? "User";
+            this.Text = $"AlagaTrack — {user}";
+
+            panelSidebar.Width = SidebarCollapsedWidth;
+            LoadSidebarForm();
+            UpdateSidebarShape();
+            panelSidebar.BringToFront();
+            OpenPage(new OwnersForm(), "Owners");
+        }
+
+        private void LoadSidebarForm()
+        {
+            _sidebarForm = new SidebarForm();
+            _sidebarForm.TopLevel = false;
+            _sidebarForm.FormBorderStyle = FormBorderStyle.None;
+            _sidebarForm.Dock = DockStyle.Fill;
+            _sidebarForm.NavigationRequested += NavigationRequested;
+            _sidebarForm.HideSidebarRequested += CollapseSidebar;
+            panelSidebar.Controls.Add(_sidebarForm);
+            _sidebarForm.Show();
+        }
+
+        private void CollapseSidebar()
+        {
+            if (panelSidebar.Width <= SidebarCollapsedWidth) return;
+
+            _isSidebarExpanded = true;
+            if (!sidebarTimer.Enabled)
+                sidebarTimer.Start();
+        }
+
+        private void OpenPage(Form page, string title)
+        {
+            if (_activePage != null)
+            {
+                panelContentHost.Controls.Remove(_activePage);
+                _activePage.Dispose();
+            }
+
+            _activePage = page;
+            page.TopLevel = false;
+            page.FormBorderStyle = FormBorderStyle.None;
+            page.Dock = DockStyle.Fill;
+            panelContentHost.Controls.Add(page);
+            page.Show();
+            lblPageTitle.Text = title;
+        }
+
+        private void NavigationRequested(string pageKey)
+        {
+            switch (pageKey)
+            {
+                case "Dashboard":
+                    lblPageTitle.Text = "Dashboard";
+                    break;
+                case "Owners":
+                    OpenPage(new OwnersForm(), "Owners");
+                    break;
+                case "Pets":
+                    OpenPage(new PetsForm(), "Pets");
+                    break;
+                case "Vaccinations":
+                    OpenPage(new VaccinationsForm(), "Vaccinations");
+                    break;
+                case "Lost Pets":
+                    OpenPage(new LostPetsForm(), "Lost Pets");
+                    break;
+                case "Staff Management":
+                    OpenPage(new StaffManagementForm(), "Staff Management");
+                    break;
+                case "Log In":
+                    // Clear session on logout
+                    UserSession.Instance.UserID = 0;
+                    UserSession.Instance.Username = string.Empty;
+                    UserSession.Instance.Role = string.Empty;
+
+                    LoginPage loginPage = new LoginPage();
+                    loginPage.Show();
+                    this.Close();
+                    break;
+                default:
+                    OpenPage(new OwnersForm(), "Owners");
+                    break;
+            }
+        }
+
+        private void btnHamburger_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
+        }
+
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (_isSidebarExpanded)
+            {
+                panelSidebar.Width -= 15;
+                if (panelSidebar.Width <= SidebarCollapsedWidth)
+                {
+                    panelSidebar.Width = SidebarCollapsedWidth;
+                    _isSidebarExpanded = false;
+                    sidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                panelSidebar.Width += 15;
+                if (panelSidebar.Width >= SidebarExpandedWidth)
+                {
+                    panelSidebar.Width = SidebarExpandedWidth;
+                    _isSidebarExpanded = true;
+                    sidebarTimer.Stop();
+                }
+            }
+
+            UpdateSidebarShape();
+            panelSidebar.BringToFront();
+        }
+
+        private void UpdateSidebarShape()
+        {
+            panelSidebar.Region = null;
+        }
+
+        private void lblPageTitle_Click(object sender, EventArgs e) { }
+        private void button1_Click(object sender, EventArgs e) { }
+    }
+}

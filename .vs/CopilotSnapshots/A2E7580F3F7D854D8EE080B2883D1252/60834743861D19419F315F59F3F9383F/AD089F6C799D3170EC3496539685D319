@@ -1,0 +1,16 @@
+﻿namespace SectionLogins
+{
+    public class UserSession
+    {
+        private static readonly Lazy<UserSession> _instance = new Lazy<UserSession>(() => new UserSession());
+
+        public static UserSession Instance => _instance.Value;
+
+        //DB setters and getters for the login ni, bro
+        public int UserID { get; set; }
+        public string Username { get; set; }
+        public string Role { get; set; }
+
+        private UserSession() { }
+    }
+}

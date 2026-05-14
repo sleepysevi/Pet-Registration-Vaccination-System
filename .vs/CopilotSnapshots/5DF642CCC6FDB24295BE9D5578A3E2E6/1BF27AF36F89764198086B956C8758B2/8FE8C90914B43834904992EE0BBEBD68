@@ -1,0 +1,157 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace AlagaTrackFrontEnd
+{
+    public partial class Dashboard : Form
+    {
+        private const int SidebarCollapsedWidth = 0;
+        private const int SidebarExpandedWidth = 250;
+        private bool _isSidebarExpanded;
+        private Form _activePage;
+        private SidebarForm _sidebarForm;
+
+        public Dashboard()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            panelSidebar.Width = SidebarCollapsedWidth;
+            LoadSidebarForm();
+            UpdateSidebarShape();
+            panelSidebar.BringToFront();
+            OpenPage(new OwnersForm(), "Owners");
+        }
+
+        private void LoadSidebarForm()
+        {
+            _sidebarForm = new SidebarForm();
+            _sidebarForm.TopLevel = false;
+            _sidebarForm.FormBorderStyle = FormBorderStyle.None;
+            _sidebarForm.Dock = DockStyle.Fill;
+            _sidebarForm.NavigationRequested += NavigationRequested;
+            _sidebarForm.HideSidebarRequested += CollapseSidebar;
+            panelSidebar.Controls.Add(_sidebarForm);
+            _sidebarForm.Show();
+        }
+
+        private void CollapseSidebar()
+        {
+            if (panelSidebar.Width <= SidebarCollapsedWidth)
+            {
+                return;
+            }
+
+            _isSidebarExpanded = true;
+            if (!sidebarTimer.Enabled)
+            {
+                sidebarTimer.Start();
+            }
+        }
+
+        private void OpenPage(Form page, string title)
+        {
+            if (_activePage != null)
+            {
+                panelContentHost.Controls.Remove(_activePage);
+                _activePage.Dispose();
+            }
+
+            _activePage = page;
+            page.TopLevel = false;
+            page.FormBorderStyle = FormBorderStyle.None;
+            page.Dock = DockStyle.Fill;
+            panelContentHost.Controls.Add(page);
+            page.Show();
+            lblPageTitle.Text = title;
+        }
+
+        private void NavigationRequested(string pageKey)
+        {
+            // Bisaya: diri ta mo-abli sa laing Form depende sa gipislit nga menu.
+            switch (pageKey)
+            {
+                case "Dashboard":
+                    // Bisaya: walay local form ani karon, label lang sa ta para visible ang nav item.
+                    lblPageTitle.Text = "Dashboard";
+                    break;
+                case "Owners":
+                    OpenPage(new OwnersForm(), "Owners");
+                    break;
+                case "Pets":
+                    OpenPage(new PetsForm(), "Pets");
+                    break;
+                case "Vaccinations":
+                    OpenPage(new VaccinationsForm(), "Vaccinations");
+                    break;
+                case "Lost Pets":
+                    OpenPage(new LostPetsForm(), "Lost Pets");
+                    break;
+                case "Staff Management":
+                    OpenPage(new StaffManagementForm(), "Staff Management");
+                    break;
+                case "Log In":
+                    // Logout: Close Form1 and return to login page
+                    SectionLogins.LoginPage loginPage = new SectionLogins.LoginPage();
+                    loginPage.Show();
+                    this.Close();
+                    break;
+                default:
+                    OpenPage(new OwnersForm(), "Owners");
+                    break;
+            }
+        }
+
+        private void btnHamburger_Click(object sender, EventArgs e)
+        {
+            // Bisaya: i-toggle ni ang sidebar, mo-gawas ra kung i-click ang 3 lines.
+            sidebarTimer.Start();
+        }
+
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (_isSidebarExpanded)
+            {
+                panelSidebar.Width -= 15;
+                if (panelSidebar.Width <= SidebarCollapsedWidth)
+                {
+                    panelSidebar.Width = SidebarCollapsedWidth;
+                    _isSidebarExpanded = false;
+                    sidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                panelSidebar.Width += 15;
+                if (panelSidebar.Width >= SidebarExpandedWidth)
+                {
+                    panelSidebar.Width = SidebarExpandedWidth;
+                    _isSidebarExpanded = true;
+                    sidebarTimer.Stop();
+                }
+            }
+
+            UpdateSidebarShape();
+            panelSidebar.BringToFront();
+        }
+
+        private void UpdateSidebarShape()
+        {
+            // Sidebar corners intentionally straight (not rounded).
+            panelSidebar.Region = null;
+        }
+
+        private void lblPageTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

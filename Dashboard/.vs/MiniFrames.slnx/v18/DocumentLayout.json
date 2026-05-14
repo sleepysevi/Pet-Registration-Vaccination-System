@@ -1,0 +1,619 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\acer\\Desktop\\MiniFrames\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\viewownerpetsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\viewownerpetsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\reportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\reportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\qrform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\qrform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\ownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\ownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\lostpetreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\lostpetreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\lostpetdescriptionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\lostpetdescriptionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editstaffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editstaffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editreportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editreportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editpetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editpetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editarshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editarshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\arshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\arshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\lostpetdescriptionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\lostpetdescriptionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\petinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\owner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051A81ED-9476-4FF8-843F-55CA71DA8C1C}|MiniFrames\\MiniFrames.csproj|C:\\Users\\acer\\Desktop\\MiniFrames\\miniframes\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{051A81ED-9476-4FF8-843F-55CA71DA8C1C}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\viewownerpetsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\viewownerpetsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editstaffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editstaffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editreportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editreportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\vaccination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\vaccination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editarshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editarshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editpetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editpetform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\editownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\editownerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\reportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\reportlostform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\staffform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{051A81ED-9476-4FF8-843F-55CA71DA8C1C}|MiniFrames\\MiniFrames.csproj|C:\\Users\\acer\\Desktop\\MiniFrames\\miniframes\\arshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{051A81ED-9476-4FF8-843F-55CA71DA8C1C}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\arshotform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\ownerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\ownerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\petform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\petform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|c:\\users\\acer\\desktop\\miniframes\\miniframes\\qrform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4257D459-EC57-B45B-10F3-64D9EC2B5BF4}|MiniFrames\\MiniFrames.csproj|solutionrelative:miniframes\\qrform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PetForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\PetForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.cs",
+              "RelativeToolTip": "MiniFrames\\PetForm.cs",
+              "ViewState": "AgIAAOsBAAAAAAAAAAAAAKUBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:13:25.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PetInfoForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetInfoForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\PetInfoForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetInfoForm.cs",
+              "RelativeToolTip": "MiniFrames\\PetInfoForm.cs",
+              "ViewState": "AgIAAMQBAAAAAAAAAAAIwMkBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:56:42.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QrForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\QrForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\QrForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\QrForm.cs",
+              "RelativeToolTip": "MiniFrames\\QrForm.cs",
+              "ViewState": "AgIAAG4BAAAAAAAAAAAiwFcBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:06:03.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportLostForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ReportLostForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\ReportLostForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ReportLostForm.cs",
+              "RelativeToolTip": "MiniFrames\\ReportLostForm.cs",
+              "ViewState": "AgIAAJgBAAAAAAAAAAAAAFMBAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T06:55:53.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StaffForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\StaffForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\StaffForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\StaffForm.cs",
+              "RelativeToolTip": "MiniFrames\\StaffForm.cs",
+              "ViewState": "AgIAAJQBAAAAAAAAAAAAwIUBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T07:59:58.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewOwnerPetsForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ViewOwnerPetsForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\ViewOwnerPetsForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ViewOwnerPetsForm.cs",
+              "RelativeToolTip": "MiniFrames\\ViewOwnerPetsForm.cs",
+              "ViewState": "AgIAAJ0BAAAAAAAAAAAAAKcBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:39:34.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OwnerForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\OwnerForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\OwnerForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\OwnerForm.cs",
+              "RelativeToolTip": "MiniFrames\\OwnerForm.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAwwAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:25:01.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LostPetReport.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\LostPetReport.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\LostPetReport.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\LostPetReport.cs",
+              "RelativeToolTip": "MiniFrames\\LostPetReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:17:22.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LostPetDescriptionForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\LostPetDescriptionForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\LostPetDescriptionForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\LostPetDescriptionForm.cs",
+              "RelativeToolTip": "MiniFrames\\LostPetDescriptionForm.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAA0wA0BAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T10:11:54.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditStaffForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditStaffForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditStaffForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditStaffForm.cs",
+              "RelativeToolTip": "MiniFrames\\EditStaffForm.cs",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAmwGIBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:25:03.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditReportLostForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditReportLostForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditReportLostForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditReportLostForm.cs",
+              "RelativeToolTip": "MiniFrames\\EditReportLostForm.cs",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAowMgBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:16:56.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EditPetForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditPetForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditPetForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditPetForm.cs",
+              "RelativeToolTip": "MiniFrames\\EditPetForm.cs",
+              "ViewState": "AgIAAPQBAAAAAAAAAAAuwOwBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:53:40.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EditOwnerForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditOwnerForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditOwnerForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditOwnerForm.cs",
+              "RelativeToolTip": "MiniFrames\\EditOwnerForm.cs",
+              "ViewState": "AgIAAEABAAAAAAAAAAAuwDcBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:41:30.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditARShotForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditARShotForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditARShotForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditARShotForm.cs",
+              "RelativeToolTip": "MiniFrames\\EditARShotForm.cs",
+              "ViewState": "AgIAAG0BAAAAAAAAAAAwwGoBAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:03:43.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ARShotForm.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ARShotForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\ARShotForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ARShotForm.cs",
+              "RelativeToolTip": "MiniFrames\\ARShotForm.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAgwPEAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T13:10:31.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Program.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\Program.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Program.cs",
+              "RelativeToolTip": "MiniFrames\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:10:57.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PetInfoForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetInfoForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\PetInfoForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetInfoForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\PetInfoForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:53:45.365Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Pet.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\Pet.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Pet.cs",
+              "RelativeToolTip": "MiniFrames\\Pet.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:54:29.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LostPetDescriptionForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\LostPetDescriptionForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\LostPetDescriptionForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\LostPetDescriptionForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\LostPetDescriptionForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T10:11:50.112Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Owner.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Owner.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\Owner.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Owner.cs",
+              "RelativeToolTip": "MiniFrames\\Owner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:46:06.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PetForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\PetForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\PetForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:39:49.604Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PetForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\PetForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Documents\\MiniFrames\\MiniFrames\\PetForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\Documents\\MiniFrames\\MiniFrames\\PetForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:14:51.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewOwnerPetsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ViewOwnerPetsForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\ViewOwnerPetsForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ViewOwnerPetsForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\ViewOwnerPetsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:35:18.993Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Staff.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\Staff.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Staff.cs",
+              "RelativeToolTip": "MiniFrames\\Staff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:25:25.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditStaffForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditStaffForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditStaffForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditStaffForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\EditStaffForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:24:55.467Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EditReportLostForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditReportLostForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditReportLostForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditReportLostForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\EditReportLostForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:16:51.556Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Vaccination.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Vaccination.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\Vaccination.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\Vaccination.cs",
+              "RelativeToolTip": "MiniFrames\\Vaccination.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:04:10.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EditARShotForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditARShotForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditARShotForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditARShotForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\EditARShotForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T09:01:23.47Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EditPetForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditPetForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditPetForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditPetForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\EditPetForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:53:00.272Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "EditOwnerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditOwnerForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\EditOwnerForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\EditOwnerForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\EditOwnerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:38:50.434Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ReportLostForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ReportLostForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\ReportLostForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ReportLostForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\ReportLostForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T05:28:20.431Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "StaffForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\StaffForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\StaffForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\StaffForm.cs [Design]",
+              "RelativeToolTip": "MiniFrames\\StaffForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T07:54:40.059Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ARShotForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\ARShotForm.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\ARShotForm.cs",
+              "ToolTip": "C:\\Users\\acer\\Documents\\MiniFrames\\MiniFrames\\ARShotForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\Documents\\MiniFrames\\MiniFrames\\ARShotForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T13:10:27.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OwnerForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\OwnerForm.Designer.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\OwnerForm.Designer.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\OwnerForm.Designer.cs",
+              "RelativeToolTip": "MiniFrames\\OwnerForm.Designer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:23:42.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PetForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.Designer.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\PetForm.Designer.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\PetForm.Designer.cs",
+              "RelativeToolTip": "MiniFrames\\PetForm.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:15:53.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "QrForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\QrForm.Designer.cs",
+              "RelativeDocumentMoniker": "MiniFrames\\QrForm.Designer.cs",
+              "ToolTip": "C:\\Users\\acer\\Desktop\\MiniFrames\\MiniFrames\\QrForm.Designer.cs",
+              "RelativeToolTip": "MiniFrames\\QrForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T10:04:41.863Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

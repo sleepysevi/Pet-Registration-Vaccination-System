@@ -1,0 +1,116 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>AlagaTrackFrontEnd</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseIntermediateOutputPath>obj\AlagaTrackFrontEnd\</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin\AlagaTrackFrontEnd\</BaseOutputPath>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.6.0" />
+    <ProjectReference Include="Dashboard\MiniFrames\MiniFrames.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\Program.cs" />
+    <Compile Include="Backend\DatabaseConfig.cs" />
+    <Compile Include="Backend\OwnerRecord.cs" />
+    <Compile Include="Backend\OwnerManager.cs" />
+    <Compile Include="Backend\PetRecord.cs" />
+    <Compile Include="Backend\PetManager.cs" />
+    <Compile Include="Backend\VaccinationRecord.cs" />
+    <Compile Include="Backend\VaccinationManager.cs" />
+    <Compile Include="Backend\LostReportRecord.cs" />
+    <Compile Include="Backend\LostReportManager.cs" />
+    <Compile Include="Backend\StaffRecord.cs" />
+    <Compile Include="Backend\StaffManager.cs" />
+    <Compile Include="Backend\UserManager.cs" />
+    <Compile Include="Dashboard\Form1.cs" />
+    <Compile Include="Dashboard\Form1.Designer.cs" />
+    <Compile Include="Dashboard\MainPages\Dashboard.cs" />
+    <Compile Include="Dashboard\MainPages\Dashboard.Designer.cs" />
+    <Compile Include="Dashboard\MainPages\AboutPage.cs" />
+    <Compile Include="Dashboard\MainPages\AboutPage.Designer.cs" />
+    <Compile Include="Dashboard\SidebarForm.cs" />
+    <Compile Include="Dashboard\SidebarForm.Designer.cs" />
+    <Compile Include="Dashboard\DashboardForm.cs" />
+    <Compile Include="Dashboard\DashboardForm.Designer.cs" />
+    <Compile Include="Dashboard\OwnersForm.cs" />
+    <Compile Include="Dashboard\OwnersForm.Designer.cs" />
+    <Compile Include="Dashboard\PetsForm.cs" />
+    <Compile Include="Dashboard\PetsForm.Designer.cs" />
+    <Compile Include="Dashboard\VaccinationsForm.cs" />
+    <Compile Include="Dashboard\VaccinationsForm.Designer.cs" />
+    <Compile Include="Dashboard\LostPetsForm.cs" />
+    <Compile Include="Dashboard\LostPetsForm.Designer.cs" />
+    <Compile Include="Dashboard\StaffManagementForm.cs" />
+    <Compile Include="Dashboard\StaffManagementForm.Designer.cs" />
+    <Compile Include="Dashboard\UiRoundHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dashboard\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MainPages\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MainPages\AboutPage.resx">
+      <DependentUpon>AboutPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MainPages\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\LostPetsForm.resx">
+      <DependentUpon>LostPetsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\OwnersForm.resx">
+      <DependentUpon>OwnersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\PetsForm.resx">
+      <DependentUpon>PetsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\StaffManagementForm.resx">
+      <DependentUpon>StaffManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\SidebarForm.resx">
+      <DependentUpon>SidebarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\VaccinationsForm.resx">
+      <DependentUpon>VaccinationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dashboard\Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MainPages\Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dashboard\App.config" />
+    <None Include="Dashboard\Resources\Rectangle 6.png" />
+    <None Include="Dashboard\Resources\Ellipse 2.png" />
+    <None Include="Dashboard\Resources\Ellipse 21.png" />
+  </ItemGroup>
+</Project>

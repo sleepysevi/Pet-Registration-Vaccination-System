@@ -1,0 +1,138 @@
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace AlagaTrack
+{
+    public partial class Form1 : Form
+    {
+        private TextBox txtUser;
+        private TextBox txtPass;
+        private Button btnLogin;
+        private TextBox txtOwnerName;
+        private TextBox txtOwnerAddress;
+        private TextBox txtOwnerContact;
+        private Button btnAddOwner;
+        private TextBox txtDeleteID;
+        private Button btnDeleteOwner;
+
+        public Form1()
+        {
+            InitializeComponent();
+            SetupTemporaryUI();
+        }
+
+        private void SetupTemporaryUI()
+        {
+            this.Text = "Database Test - AlagaTrack";
+            this.Size = new Size(300, 350);
+
+            txtUser = new TextBox { Location = new Point(30, 30),  Width = 200 };
+            txtPass = new TextBox { Location = new Point(30, 70),  Width = 200, UseSystemPasswordChar = true };
+            btnLogin = new Button { Location = new Point(30, 110), Text = "Test Login", Width = 100 };
+            btnLogin.Click += btnLogin_Click;
+
+            txtOwnerName    = new TextBox { Location = new Point(30, 160), PlaceholderText = "Owner Name",     Width = 200 };
+            txtOwnerAddress = new TextBox { Location = new Point(30, 195), PlaceholderText = "Address",        Width = 200 };
+            txtOwnerContact = new TextBox { Location = new Point(30, 230), PlaceholderText = "Contact Number", Width = 200 };
+            btnAddOwner     = new Button  { Location = new Point(30, 265), Text = "Register Owner",            Width = 120 };
+            btnAddOwner.Click += btnAddOwner_Click;
+
+            this.Controls.Add(txtUser);
+            this.Controls.Add(txtPass);
+            this.Controls.Add(btnLogin);
+            this.Controls.Add(txtOwnerName);
+            this.Controls.Add(txtOwnerAddress);
+            this.Controls.Add(txtOwnerContact);
+            this.Controls.Add(btnAddOwner);
+        }
+
+        private bool AuthenticateUser(string user, string pass)
+        {
+            try
+            {
+                using (var conn = DatabaseConfig.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT userID, username, role FROM users WHERE username = @user AND password = @pass";
+
+                    using (var cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@user", user);
+                        cmd.Parameters.AddWithValue("@pass", pass);
+
+                        using (var reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                UserSession.UserID   = reader.GetInt32("userID");
+                                UserSession.Username = reader.GetString("username");
+                                UserSession.Role     = reader.GetString("role");
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Database Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return false;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (AuthenticateUser(txtUser.Text, txtPass.Text))
+            {
+                MessageBox.Show($"Login Success! Welcome {UserSession.Role}", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password.", "Failed",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        } 
+
+        private void btnAddOwner_Click(object sender, EventArgs e)
+        {
+            OwnerManager manager = new OwnerManager();
+            bool success = manager.AddOwner(txtOwnerName.Text, txtOwnerAddress.Text, txtOwnerContact.Text);
+
+            if (success)
+            {
+                MessageBox.Show("Owner Registered Successfully!");
+                txtOwnerName.Clear();
+                txtOwnerAddress.Clear();
+                txtOwnerContact.Clear();
+            }
+        }
+        private void AddDeleteUI()
+        {
+            txtDeleteID = new TextBox { Location = new Point(30, 200), PlaceholderText = "Owner ID", Width = 200 };
+            btnDeleteOwner = new Button { Location = new Point(30, 235), Text = "Delete Owner", Width = 120 };
+
+            btnDeleteOwner.Click += (s, e) =>
+            {
+                if (int.TryParse(txtDeleteID.Text, out int id))
+                {
+                    OwnerManager manager = new OwnerManager();
+                    if (manager.DeleteOwner(id))
+                    {
+                        MessageBox.Show("Owner Deleted Successfully!");
+                        txtDeleteID.Clear();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid numeric ID.");
+                }
+            };
+            this.Controls.Add(txtDeleteID);
+            this.Controls.Add(btnDeleteOwner);
+         }
+            
+        }
+}

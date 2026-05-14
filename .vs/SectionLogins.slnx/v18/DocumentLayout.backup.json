@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\loginsection\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|solutionrelative:loginsection\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\backend\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|solutionrelative:backend\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\loginsection\\loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|solutionrelative:loginsection\\loginpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\loginsection\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|solutionrelative:loginsection\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\backend\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|solutionrelative:backend\\databaseconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\backend\\ownermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86B725B-A665-2990-1E9C-1096825CB5EB}|SectionLogins.csproj|solutionrelative:backend\\ownermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\LoginSection\\LoginPage.cs",
+              "RelativeDocumentMoniker": "LoginSection\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\LoginSection\\LoginPage.cs",
+              "RelativeToolTip": "LoginSection\\LoginPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T10:34:08.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\LoginSection\\LoginPage.Designer.cs",
+              "RelativeDocumentMoniker": "LoginSection\\LoginPage.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\LoginSection\\LoginPage.Designer.cs",
+              "RelativeToolTip": "LoginSection\\LoginPage.Designer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T10:33:59.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseConfig.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Backend\\DatabaseConfig.cs",
+              "RelativeDocumentMoniker": "Backend\\DatabaseConfig.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Backend\\DatabaseConfig.cs",
+              "RelativeToolTip": "Backend\\DatabaseConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T10:26:09.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\LoginSection\\LoginPage.cs",
+              "RelativeDocumentMoniker": "LoginSection\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\LoginSection\\LoginPage.cs [Design]",
+              "RelativeToolTip": "LoginSection\\LoginPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T10:33:57.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OwnerManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Backend\\OwnerManager.cs",
+              "RelativeDocumentMoniker": "Backend\\OwnerManager.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Backend\\OwnerManager.cs",
+              "RelativeToolTip": "Backend\\OwnerManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T10:26:14.999Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Backend\\UserManager.cs",
+              "RelativeDocumentMoniker": "Backend\\UserManager.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Backend\\UserManager.cs",
+              "RelativeToolTip": "Backend\\UserManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-09T10:34:48.692Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

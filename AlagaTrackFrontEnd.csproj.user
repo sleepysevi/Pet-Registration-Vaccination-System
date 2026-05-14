@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Dashboard\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\LostPetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\OwnersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\PetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\SidebarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\StaffManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\VaccinationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

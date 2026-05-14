@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Backend\StubForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\LostPetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\ARShotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\EditARShotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\EditOwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\EditPetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\EditReportLostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\EditStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\LostPetDescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\OwnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\PetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\PetInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\QrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\ReportLostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MiniFrames\ViewOwnerPetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\OwnersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\PetsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\SidebarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\StaffManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dashboard\VaccinationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginSection\ForgotPasswordPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginSection\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

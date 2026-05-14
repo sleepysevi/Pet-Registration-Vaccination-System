@@ -1,0 +1,95 @@
+﻿using System;
+using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace SectionLogins
+{
+    partial class Dashboard
+    {
+        private IContainer components = null;
+
+        // Form controls
+        public Panel panelSidebar;
+        public Panel panelContentHost;
+        public Label lblPageTitle;
+        public Button btnHamburger;
+        public System.Windows.Forms.Timer sidebarTimer;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            components = new Container();
+            panelSidebar = new Panel();
+            panelContentHost = new Panel();
+            lblPageTitle = new Label();
+            btnHamburger = new Button();
+            sidebarTimer = new Timer(components);
+
+            // panelSidebar
+            panelSidebar.BackColor = System.Drawing.Color.FromArgb(32, 47, 124);
+            panelSidebar.Dock = DockStyle.Left;
+            panelSidebar.Location = new System.Drawing.Point(0, 0);
+            panelSidebar.Name = "panelSidebar";
+            panelSidebar.Size = new System.Drawing.Size(250, 600);
+            panelSidebar.TabIndex = 0;
+
+            // panelContentHost
+            panelContentHost.BackColor = System.Drawing.Color.White;
+            panelContentHost.Dock = DockStyle.Fill;
+            panelContentHost.Location = new System.Drawing.Point(0, 50);
+            panelContentHost.Name = "panelContentHost";
+            panelContentHost.Size = new System.Drawing.Size(750, 550);
+            panelContentHost.TabIndex = 1;
+
+            // lblPageTitle
+            lblPageTitle.BackColor = System.Drawing.Color.FromArgb(50, 70, 160);
+            lblPageTitle.Dock = DockStyle.Top;
+            lblPageTitle.Font = new System.Drawing.Font("Arial", 14f);
+            lblPageTitle.ForeColor = System.Drawing.Color.White;
+            lblPageTitle.Location = new System.Drawing.Point(0, 0);
+            lblPageTitle.Name = "lblPageTitle";
+            lblPageTitle.Size = new System.Drawing.Size(1000, 50);
+            lblPageTitle.TabIndex = 2;
+            lblPageTitle.Text = "Dashboard";
+            lblPageTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblPageTitle.Click += lblPageTitle_Click;
+
+            // btnHamburger
+            btnHamburger.BackColor = System.Drawing.Color.FromArgb(50, 70, 160);
+            btnHamburger.FlatStyle = FlatStyle.Flat;
+            btnHamburger.ForeColor = System.Drawing.Color.White;
+            btnHamburger.Location = new System.Drawing.Point(10, 10);
+            btnHamburger.Name = "btnHamburger";
+            btnHamburger.Size = new System.Drawing.Size(30, 30);
+            btnHamburger.TabIndex = 3;
+            btnHamburger.Text = "☰";
+            btnHamburger.UseVisualStyleBackColor = false;
+            btnHamburger.Click += btnHamburger_Click;
+
+            // sidebarTimer
+            sidebarTimer.Interval = 20;
+            sidebarTimer.Tick += sidebarTimer_Tick;
+
+            // Dashboard
+            AutoScaleDimensions = new System.Drawing.SizeF(7f, 15f);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1000, 600);
+            Controls.Add(panelContentHost);
+            Controls.Add(lblPageTitle);
+            Controls.Add(panelSidebar);
+            Controls.Add(btnHamburger);
+            Name = "Dashboard";
+            Text = "AlagaTrack";
+            Load += Dashboard_Load;
+            ResumeLayout(false);
+        }
+    }
+}
