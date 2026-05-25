@@ -1,0 +1,11 @@
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\SectionLogins.pdb
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\MiniFrames.runtimeconfig.json
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\comerr64.dll
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\gssapi64.dll
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\k5sprt64.dll
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\krb5_64.dll
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\krbcc64.dll
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\AlagaTrackFrontEnd.pdb
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\AlagaTrackFrontEnd.dll.config
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\MiniFrames.pdb
+C:\Users\user\OneDrive\Desktop\AlagaTrack\bin\Release\net10.0-windows\win-x64\publish\SectionLogins.exe

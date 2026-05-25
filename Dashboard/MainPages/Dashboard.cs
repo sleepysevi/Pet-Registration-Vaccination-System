@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.ComponentModel;
 using AlagaTrack;
@@ -29,9 +30,6 @@ namespace MainPages
         private Panel SeeMorePanel;
         private Label SeeMoreLabel;
 
-        private Panel AboutClick;
-        private Label AboutLabel;
-
         private Panel ChartContainer;
 
         private SimpleLineChart chart;
@@ -48,7 +46,6 @@ namespace MainPages
             DoubleBuffered = true;
 
             Header.Paint += Header_Paint;
-            this.Paint += Dashboard_Paint;
 
             ApplyPanelStyle(TotalPetsDash);
             ApplyPanelStyle(VaccinatedDash);
@@ -59,19 +56,22 @@ namespace MainPages
             CreateNumbers();
             CreateExtraLabels();
             CreateRecentPetsPanel();
-            CreateAboutPanel();
 
-            this.Shown += (s, e) =>
+            this.Shown += async (s, e) =>
             {
                 CenterMain();
                 CenterExtras();
-                RefreshFromDatabase();
-                if (!TopLevel)
-                    AboutClick?.BringToFront();
+                await RefreshFromDatabaseAsync();
             };
         }
 
-        private void RefreshFromDatabase()
+        private async Task RefreshFromDatabaseAsync()
+        {
+            var data = await Task.Run(() => FetchDashboardData());
+            ApplyDashboardData(data);
+        }
+
+        private DashboardData FetchDashboardData()
         {
             var petMgr = new PetManager();
             var vacMgr = new VaccinationManager();
@@ -79,37 +79,43 @@ namespace MainPages
 
             int totalPets = petMgr.GetTotalPetCount();
             int todayPets = petMgr.GetPetsRegisteredTodayCount();
-            TotalPetsNum.Text = totalPets.ToString();
-            TotalPetsToday.Text = $"+{todayPets} today";
-
             var (vacPets, vacTotal) = vacMgr.GetVaccinationCoverage();
-            int pct = vacTotal <= 0 ? 0 : (int)Math.Round(100.0 * vacPets / vacTotal);
-            VaccinatedPercentage.Text = $"{pct}%";
-            VaccinatedRatio.Text = $"{vacPets}/{Math.Max(vacTotal, 1)}";
-
             int activeLost = lostMgr.CountByStatus("active");
-            LostNum.Text = activeLost.ToString();
-            LostStatus.Text = activeLost == 0 ? "None active" : "Active";
-
             int year = DateTime.Now.Year;
             var monthly = vacMgr.GetShotsPerMonthForYear(year);
-            chart.Values = monthly;
-            int peak = monthly.Length == 0 ? 0 : monthly.Max();
+            var recent = petMgr.GetRecentPets(8);
+            var vacInfo = vacMgr.GetLatestVaccinationSummaryByPetIds(recent.Select(p => p.PetID));
+
+            return new DashboardData(totalPets, todayPets, vacPets, vacTotal, activeLost, monthly, recent, vacInfo);
+        }
+
+        private void ApplyDashboardData(DashboardData data)
+        {
+            TotalPetsNum.Text = data.TotalPets.ToString();
+            TotalPetsToday.Text = $"+{data.TodayPets} today";
+
+            int pct = data.TotalVaccTotal <= 0 ? 0 : (int)Math.Round(100.0 * data.VaccinatedPets / data.TotalVaccTotal);
+            VaccinatedPercentage.Text = $"{pct}%";
+            VaccinatedRatio.Text = $"{data.VaccinatedPets}/{Math.Max(data.TotalVaccTotal, 1)}";
+
+            LostNum.Text = data.ActiveLost.ToString();
+            LostStatus.Text = data.ActiveLost == 0 ? "None active" : "Active";
+
+            chart.Values = data.Monthly;
+            int peak = data.Monthly.Length == 0 ? 0 : data.Monthly.Max();
             chart.ValueMax = peak <= 0 ? 1 : peak;
             chart.Invalidate();
 
-            var recent = petMgr.GetRecentPets(8);
-            var vacInfo = vacMgr.GetLatestVaccinationSummaryByPetIds(recent.Select(p => p.PetID));
             for (int r = 1; r < 9; r++)
             {
                 string id = "-", name = "-", owner = "-", lastVac = "-", st = "-";
-                if (r - 1 < recent.Count)
+                if (r - 1 < data.RecentPets.Count)
                 {
-                    var p = recent[r - 1];
+                    var p = data.RecentPets[r - 1];
                     id = p.PetID.ToString();
                     name = string.IsNullOrWhiteSpace(p.PetName) ? "—" : p.PetName;
                     owner = string.IsNullOrWhiteSpace(p.OwnerName) ? "—" : p.OwnerName;
-                    if (vacInfo.TryGetValue(p.PetID, out var vi))
+                    if (data.VaccinationSummaries.TryGetValue(p.PetID, out var vi))
                     {
                         lastVac = vi.lastDate;
                         st = vi.status;
@@ -131,6 +137,16 @@ namespace MainPages
             CenterMain();
             CenterExtras();
         }
+
+        private sealed record DashboardData(
+            int TotalPets,
+            int TodayPets,
+            int VaccinatedPets,
+            int TotalVaccTotal,
+            int ActiveLost,
+            int[] Monthly,
+            List<PetRecord> RecentPets,
+            Dictionary<int, (string lastDate, string status)> VaccinationSummaries);
 
         private void SetRecentCell(int row, int col, string text)
         {
@@ -281,58 +297,6 @@ namespace MainPages
                 Rectangle r = e.CellBounds;
                 e.Graphics.DrawRectangle(p, r);
             }
-        }
-        private void CreateAboutPanel()
-        {
-            AboutLabel = new Label
-            {
-                Text = "ABOUT",
-                Font = new Font("Inter", 12F, FontStyle.Bold),
-                ForeColor = Color.White,
-                AutoSize = true,
-                TextAlign = ContentAlignment.MiddleCenter,
-                BackColor = Color.Transparent,
-                Cursor = Cursors.Hand
-            };
-
-            int padX = 18;
-            int padY = 10;
-            int innerW = Math.Max(AboutLabel.PreferredWidth, 48);
-            int innerH = Math.Max(AboutLabel.PreferredHeight, 20);
-            AboutClick = new Panel
-            {
-                BackColor = Color.FromArgb(32, 47, 124),
-                Location = new Point(760, 28),
-                Size = new Size(innerW + padX * 2, innerH + padY * 2),
-                Cursor = Cursors.Hand
-            };
-
-            // Draw rounded corners only — do not set Region (it shrinks hit-testing and breaks clicks).
-            AboutClick.Paint += (s, e) =>
-            {
-                e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-                Rectangle rect = AboutClick.ClientRectangle;
-                rect.Width--;
-                rect.Height--;
-                using (GraphicsPath path = RoundedRect(rect, 20))
-                using (var brush = new SolidBrush(AboutClick.BackColor))
-                    e.Graphics.FillPath(brush, path);
-            };
-
-            AboutLabel.Location = new Point(
-                (AboutClick.Width - AboutLabel.Width) / 2,
-                (AboutClick.Height - AboutLabel.Height) / 2
-            );
-
-            AboutClick.Click += OpenAboutPage;
-            AboutLabel.Click += OpenAboutPage;
-            AboutClick.Controls.Add(AboutLabel);
-            Controls.Add(AboutClick);
-            AboutClick.BringToFront();
-        }
-        private void OpenAboutPage(object sender, EventArgs e)
-        {
-            GetShell()?.Navigate("About");
         }
 
         /// <summary>Main shell (Form1). FindForm() returns this embedded Form, not Form1.</summary>
@@ -589,43 +553,6 @@ namespace MainPages
         }
 
         // ================= SHADOW =================
-        private void Dashboard_Paint(object sender, PaintEventArgs e)
-        {
-            DrawShadow(e.Graphics, TotalPetsDash);
-            DrawShadow(e.Graphics, VaccinatedDash);
-            DrawShadow(e.Graphics, LostDash);
-            DrawShadow(e.Graphics, Header);
-            DrawShadow(e.Graphics, AboutClick);
-            DrawShadow(e.Graphics, SeeMorePanel);
-            DrawShadow(e.Graphics, RecentPetsPanel);
-            DrawShadow(e.Graphics, ChartContainer);
-        }
-
-        private void DrawShadow(Graphics g, Panel panel)
-        {
-            Rectangle r = panel.Bounds;
-
-            int blur = 10;
-            int offsetY = 4;
-            int baseAlpha = 10;
-
-            for (int i = 0; i < blur; i++)
-            {
-                int alpha = (int)(baseAlpha * (1f - i / (float)blur));
-
-                using (SolidBrush b = new SolidBrush(Color.FromArgb(alpha, 0, 0, 0)))
-                {
-                    Rectangle shadow = new Rectangle(
-                        r.X,
-                        r.Y + offsetY + i,
-                        r.Width,
-                        r.Height
-                    );
-
-                    FillRounded(g, b, shadow, radius);
-                }
-            }
-        }
 
         // ================= HEADER =================
         private void Header_Paint(object sender, PaintEventArgs e)
@@ -742,10 +669,6 @@ namespace MainPages
                 Up(LostDash);
                 Up(ChartContainer);
                 Up(RecentPetsPanel);
-                if (AboutClick != null)
-                    AboutClick.Top = Math.Max(8, AboutClick.Top + dy);
-
-                AboutClick?.BringToFront();
             }
         }
     }

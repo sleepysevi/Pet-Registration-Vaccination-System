@@ -123,6 +123,12 @@ namespace AlagaTrack
             LogIns.BackColor = System.Drawing.Color.FromArgb(32, 47, 124);
         }
 
+        private void ShowPasswordButton_Click(object sender, EventArgs e)
+        {
+            EnterPasswordTextBox.UseSystemPasswordChar = !EnterPasswordTextBox.UseSystemPasswordChar;
+            ShowPasswordButton.Text = EnterPasswordTextBox.UseSystemPasswordChar ? "Show" : "Hide";
+        }
+
         private void LogIns_Click(object? sender, EventArgs e)
         {
             string username = EnterUsernameTextBox.Text.Trim();

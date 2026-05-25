@@ -120,7 +120,9 @@
             // EnterPasswordPanel
             // 
             EnterPasswordPanel.BackColor = Color.FromArgb(217, 217, 217);
+            // add textbox first so it does not cover the show-password button
             EnterPasswordPanel.Controls.Add(EnterPasswordTextBox);
+            EnterPasswordPanel.Controls.Add(ShowPasswordButton);
             EnterPasswordPanel.Location = new Point(361, 371);
             EnterPasswordPanel.Name = "EnterPasswordPanel";
             EnterPasswordPanel.Size = new Size(279, 45);
@@ -132,10 +134,29 @@
             EnterPasswordTextBox.BackColor = Color.FromArgb(217, 217, 217);
             EnterPasswordTextBox.Location = new Point(12, 13);
             EnterPasswordTextBox.Name = "EnterPasswordTextBox";
-            EnterPasswordTextBox.Size = new Size(279, 55);
+            EnterPasswordTextBox.Size = new Size(200, 25);
             EnterPasswordTextBox.TabIndex = 0;
             EnterPasswordTextBox.TextAlign = HorizontalAlignment.Left;
             EnterPasswordTextBox.BorderStyle = BorderStyle.None;
+            EnterPasswordTextBox.UseSystemPasswordChar = true;
+
+            // 
+            // ShowPasswordButton
+            ShowPasswordButton = new Button();
+            ShowPasswordButton.FlatStyle = FlatStyle.Flat;
+            ShowPasswordButton.FlatAppearance.BorderSize = 1;
+            ShowPasswordButton.FlatAppearance.BorderColor = Color.FromArgb(120, 160, 210);
+            ShowPasswordButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Pixel);
+            ShowPasswordButton.ForeColor = Color.FromArgb(32, 47, 124);
+            ShowPasswordButton.BackColor = Color.FromArgb(217, 217, 217);
+            ShowPasswordButton.Location = new Point(210, 10);
+            ShowPasswordButton.Name = "ShowPasswordButton";
+            ShowPasswordButton.Size = new Size(60, 26);
+            ShowPasswordButton.TabIndex = 12;
+            ShowPasswordButton.Text = "Show";
+            ShowPasswordButton.UseVisualStyleBackColor = false;
+            ShowPasswordButton.TextAlign = ContentAlignment.MiddleCenter;
+            ShowPasswordButton.Click += ShowPasswordButton_Click;
 
             // 
             // ForgotPassword
@@ -198,6 +219,7 @@
         private Label Password;
         private Panel EnterPasswordPanel;
         private TextBox EnterPasswordTextBox;
+        private Button ShowPasswordButton;
         private Label ForgotPassword;
         private Button LogIns;
     }

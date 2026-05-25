@@ -78,6 +78,7 @@ C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0
 C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\MiniFrames.AssemblyInfoInputs.cache
 C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\MiniFrames.AssemblyInfo.cs
 C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\MiniFrames.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\MiniFrames.sourcelink.json
 C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\MiniFrames.csproj.Up2Date
 C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\MiniFrames.dll
 C:\Users\user\OneDrive\Desktop\AlagaTrack\Dashboard\MiniFrames\obj\Debug\net10.0-windows\refint\MiniFrames.dll

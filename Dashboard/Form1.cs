@@ -121,7 +121,7 @@ namespace AlagaTrackFrontEnd
                     OpenPage(new StaffManagementForm(), "Staff Management");
                     break;
                 case "Logout":
-                    // Placeholder only: logout flow will be added later.
+                    PerformLogout();
                     break;
                 default:
                     OpenPage(new OwnersForm(), "Owners");
@@ -134,6 +134,42 @@ namespace AlagaTrackFrontEnd
             // Toggle: past half width → animate closed; otherwise open (same rule as mid-animation reverse).
             bool closing = panelSidebar.Width * 2 > SidebarExpandedWidth;
             StartSidebarSlide(closing);
+        }
+
+        private void PerformLogout()
+        {
+            var loginForm = Application.OpenForms.Cast<Form>().FirstOrDefault(f => f.GetType().Name == "LoginPage");
+            if (loginForm != null)
+            {
+                loginForm.Show();
+                loginForm.BringToFront();
+                Close();
+                return;
+            }
+
+            // Try to create LoginPage via reflection (no direct project reference required)
+            var loginType = AppDomain.CurrentDomain.GetAssemblies()
+                .Select(a => a.GetType("AlagaTrack.LoginPage"))
+                .FirstOrDefault(t => t != null);
+
+            if (loginType != null && typeof(Form).IsAssignableFrom(loginType))
+            {
+                try
+                {
+                    var instance = Activator.CreateInstance(loginType) as Form;
+                    instance?.Show();
+                    Close();
+                    return;
+                }
+                catch
+                {
+                    // fallback to restart if creation fails
+                }
+            }
+
+            // Last resort: restart application (will go to startup project)
+            Application.Restart();
+            Close();
         }
 
         private void sidebarTimer_Tick(object sender, EventArgs e)

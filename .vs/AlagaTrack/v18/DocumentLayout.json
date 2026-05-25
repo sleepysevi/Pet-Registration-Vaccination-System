@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\dashboard\\mainpages\\aboutpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\mainpages\\aboutpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\dashboard\\mainpages\\aboutpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\mainpages\\aboutpage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\dashboard\\sidebarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\sidebarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\dashboard\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\dashboard\\staffmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\staffmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\dashboard\\vaccinationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\vaccinationsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\dashboard\\uiroundhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\uiroundhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\dashboard\\mainpages\\aboutpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\mainpages\\aboutpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\dashboard\\mainpages\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\mainpages\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\dashboard\\mainpages\\aboutpage.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:dashboard\\mainpages\\aboutpage.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|c:\\users\\user\\onedrive\\desktop\\alagatrack\\alagatrackfrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E2D41684-F1F7-EFD9-2EC1-F04421BF047D}|AlagaTrackFrontEnd.csproj|solutionrelative:alagatrackfrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -14,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +66,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutPage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.Designer.cs",
+              "RelativeDocumentMoniker": "Dashboard\\MainPages\\AboutPage.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.Designer.cs",
+              "RelativeToolTip": "Dashboard\\MainPages\\AboutPage.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:18:14.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AboutPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.cs",
+              "RelativeDocumentMoniker": "Dashboard\\MainPages\\AboutPage.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.cs [Design]",
+              "RelativeToolTip": "Dashboard\\MainPages\\AboutPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:19:29.148Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AboutPage.resx",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.resx",
+              "RelativeDocumentMoniker": "Dashboard\\MainPages\\AboutPage.resx",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.resx",
+              "RelativeToolTip": "Dashboard\\MainPages\\AboutPage.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-15T03:18:17.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AboutPage.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.cs",
+              "RelativeDocumentMoniker": "Dashboard\\MainPages\\AboutPage.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\AboutPage.cs",
+              "RelativeToolTip": "Dashboard\\MainPages\\AboutPage.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIAwwAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:18:08.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UiRoundHelper.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\UiRoundHelper.cs",
+              "RelativeDocumentMoniker": "Dashboard\\UiRoundHelper.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\UiRoundHelper.cs",
+              "RelativeToolTip": "Dashboard\\UiRoundHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:25:26.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AlagaTrackFrontEnd.csproj",
               "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\AlagaTrackFrontEnd.csproj",
               "RelativeDocumentMoniker": "AlagaTrackFrontEnd.csproj",
@@ -34,8 +135,62 @@
               "RelativeToolTip": "AlagaTrackFrontEnd.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-09T10:31:06.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-09T10:31:06.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SidebarForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\SidebarForm.cs",
+              "RelativeDocumentMoniker": "Dashboard\\SidebarForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\SidebarForm.cs [Design]",
+              "RelativeToolTip": "Dashboard\\SidebarForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:25:23.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DashboardForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "Dashboard\\DashboardForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\DashboardForm.cs [Design]",
+              "RelativeToolTip": "Dashboard\\DashboardForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:25:15.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StaffManagementForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\StaffManagementForm.cs",
+              "RelativeDocumentMoniker": "Dashboard\\StaffManagementForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\StaffManagementForm.cs [Design]",
+              "RelativeToolTip": "Dashboard\\StaffManagementForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:25:28.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VaccinationsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\VaccinationsForm.cs",
+              "RelativeDocumentMoniker": "Dashboard\\VaccinationsForm.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\VaccinationsForm.cs [Design]",
+              "RelativeToolTip": "Dashboard\\VaccinationsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:25:31.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Dashboard\\MainPages\\Dashboard.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Desktop\\AlagaTrack\\Dashboard\\MainPages\\Dashboard.cs [Design]",
+              "RelativeToolTip": "Dashboard\\MainPages\\Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T03:22:19.31Z"
             }
           ]
         }
