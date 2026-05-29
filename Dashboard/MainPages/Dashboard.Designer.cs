@@ -179,7 +179,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(237, 237, 237);
+            BackColor = Color.FromArgb(245, 247, 250);
             ClientSize = new Size(984, 561);
             Controls.Add(LostDash);
             Controls.Add(TotalPetsDash);

@@ -26,8 +26,7 @@ namespace AlagaTrackFrontEnd
         {
             base.OnShown(e);
             if (UiRoundHelper.IsInDesignMode(this)) return;
-            UiRoundHelper.ApplyRoundedTheme(this);
-            UiRoundHelper.ConfigureTableBehavior(this);
+            UiRoundHelper.ApplyDataViewChrome(this);
 
             // Refresh summary cards so shadow paint renders after layout.
             card1.Invalidate();

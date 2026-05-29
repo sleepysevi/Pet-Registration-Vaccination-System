@@ -1,127 +1,143 @@
 using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using AlagaTrackFrontEnd;
-using MySql.Data.MySqlClient;
-
 
 namespace AlagaTrack
 {
     public partial class LoginPage : Form
     {
         private readonly UserManager _userManager = new UserManager();
+        private bool _usernameFocused;
+        private bool _passwordFocused;
 
         public LoginPage()
         {
             InitializeComponent();
 
-            // clickable label
-            ForgotPassword.Cursor = Cursors.Hand;
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = UiTheme.AppBackground;
+            DoubleBuffered = true;
 
-            // event
+            ForgotPassword.Cursor = Cursors.Hand;
             ForgotPassword.Click += ForgotPassword_Click;
 
-            this.Shown += LoginPage_Shown;
+            Shown += LoginPage_Shown;
 
             EnterUsernamePanel.Paint += EnterUsernamePanel_Paint;
             EnterPasswordPanel.Paint += EnterPasswordPanel_Paint;
 
+            EnterUsernameTextBox.Enter += (_, _) => { _usernameFocused = true; EnterUsernamePanel.Invalidate(); };
+            EnterUsernameTextBox.Leave += (_, _) => { _usernameFocused = false; EnterUsernamePanel.Invalidate(); };
+            EnterPasswordTextBox.Enter += (_, _) => { _passwordFocused = true; EnterPasswordPanel.Invalidate(); };
+            EnterPasswordTextBox.Leave += (_, _) => { _passwordFocused = false; EnterPasswordPanel.Invalidate(); };
+
             LogIns.MouseEnter += LogIns_MouseEnter;
             LogIns.MouseLeave += LogIns_MouseLeave;
             LogIns.Click += LogIns_Click;
+
+            ApplyVisualDefaults();
         }
 
-        // 👉 THIS IS THE NAVIGATION PART
+        private void ApplyVisualDefaults()
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.SendToBack();
+
+            EnterUsernamePanel.BackColor = UiTheme.InputFill;
+            EnterPasswordPanel.BackColor = UiTheme.InputFill;
+            EnterUsernameTextBox.BorderStyle = BorderStyle.None;
+            EnterPasswordTextBox.BorderStyle = BorderStyle.None;
+            EnterUsernameTextBox.BackColor = UiTheme.InputFill;
+            EnterPasswordTextBox.BackColor = UiTheme.InputFill;
+            EnterUsernameTextBox.Font = new Font("Segoe UI", 11F);
+            EnterPasswordTextBox.Font = new Font("Segoe UI", 11F);
+
+            ShowPasswordButton.FlatStyle = FlatStyle.Flat;
+            ShowPasswordButton.FlatAppearance.BorderSize = 0;
+            ShowPasswordButton.BackColor = UiTheme.InputFill;
+            ShowPasswordButton.ForeColor = UiTheme.Primary;
+            ShowPasswordButton.Font = new Font("Segoe UI", 9F);
+
+            LogIns.FlatStyle = FlatStyle.Flat;
+            LogIns.FlatAppearance.BorderSize = 0;
+            LogIns.BackColor = UiTheme.Primary;
+            LogIns.ForeColor = Color.White;
+            LogIns.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            LogIns.Cursor = Cursors.Hand;
+
+            LOGIN.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            LOGIN.ForeColor = UiTheme.Primary;
+            Username.Font = Password.Font = new Font("Segoe UI", 10F);
+            ForgotPassword.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            ForgotPassword.ForeColor = UiTheme.TextSecondary;
+        }
+
         private void ForgotPassword_Click(object sender, EventArgs e)
         {
-            ForgotPasswordPage fp = new ForgotPasswordPage();
-            fp.Show();   // open forgot password page
-            this.Hide(); // hide login page (clean switch)
+            var fp = new ForgotPasswordPage();
+            fp.Show();
+            Hide();
         }
 
         private void LoginPage_Shown(object sender, EventArgs e)
         {
-            ApplyUI();
+            AlignLoginChrome();
         }
 
-        protected override void OnResize(EventArgs e)
+        private void AlignLoginChrome()
         {
-            base.OnResize(e);
-            ApplyUI();
+            pictureBox1.SendToBack();
+
+            const int fieldWidth = 300;
+            int left = (ClientSize.Width - fieldWidth) / 2;
+
+            EnterUsernamePanel.SetBounds(left, EnterUsernamePanel.Top, fieldWidth, 44);
+            EnterPasswordPanel.SetBounds(left, EnterPasswordPanel.Top, fieldWidth, 44);
+            Username.Left = left;
+            Password.Left = left;
+
+            ForgotPassword.Left = left + fieldWidth - ForgotPassword.PreferredWidth;
+            LogIns.SetBounds(left, LogIns.Top, fieldWidth, 44);
+
+            LOGIN.Left = (ClientSize.Width - LOGIN.PreferredWidth) / 2;
         }
 
-        private void ApplyUI()
+        private void EnterUsernamePanel_Paint(object sender, PaintEventArgs e) =>
+            PaintInputBorder(e, EnterUsernamePanel, _usernameFocused);
+
+        private void EnterPasswordPanel_Paint(object sender, PaintEventArgs e) =>
+            PaintInputBorder(e, EnterPasswordPanel, _passwordFocused);
+
+        private static void PaintInputBorder(PaintEventArgs e, Panel panel, bool focused)
         {
-            int radius = 20;
-
-            EnterUsernamePanel.Region =
-                new Region(RoundedRect(EnterUsernamePanel.ClientRectangle, radius));
-
-            EnterPasswordPanel.Region =
-                new Region(RoundedRect(EnterPasswordPanel.ClientRectangle, radius));
-
-            LogIns.Region =
-                new Region(RoundedRect(LogIns.ClientRectangle, radius));
-
-            EnterUsernameTextBox.BorderStyle = BorderStyle.None;
-            EnterPasswordTextBox.BorderStyle = BorderStyle.None;
-
-            EnterUsernameTextBox.BackColor = EnterUsernamePanel.BackColor;
-            EnterPasswordTextBox.BackColor = EnterPasswordPanel.BackColor;
-
-            LogIns.FlatStyle = FlatStyle.Flat;
-            LogIns.FlatAppearance.BorderSize = 0;
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+            e.Graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            Rectangle rect = panel.ClientRectangle;
+            rect.Inflate(-1, -1);
+            using var path = BuildRoundedPath(rect, UiTheme.InputRadius);
+            using var fill = new SolidBrush(UiTheme.InputFill);
+            using var pen = new Pen(focused ? UiTheme.Primary : UiTheme.Border, 1.5f) { Alignment = PenAlignment.Inset };
+            e.Graphics.FillPath(fill, path);
+            e.Graphics.DrawPath(pen, path);
         }
 
-        private System.Drawing.Drawing2D.GraphicsPath RoundedRect(System.Drawing.Rectangle rect, int radius)
+        private static GraphicsPath BuildRoundedPath(Rectangle rect, int radius)
         {
-            var path = new System.Drawing.Drawing2D.GraphicsPath();
-            int d = radius * 2;
-
-            path.StartFigure();
+            var path = new GraphicsPath();
+            int d = Math.Min(radius * 2, Math.Min(rect.Width, rect.Height));
+            if (d <= 0) return path;
             path.AddArc(rect.X, rect.Y, d, d, 180, 90);
             path.AddArc(rect.Right - d, rect.Y, d, d, 270, 90);
             path.AddArc(rect.Right - d, rect.Bottom - d, d, d, 0, 90);
             path.AddArc(rect.X, rect.Bottom - d, d, d, 90, 90);
             path.CloseFigure();
-
             return path;
         }
 
-        private void EnterUsernamePanel_Paint(object sender, PaintEventArgs e)
-        {
-            DrawModernBorder(e, EnterUsernamePanel);
-        }
-
-        private void EnterPasswordPanel_Paint(object sender, PaintEventArgs e)
-        {
-            DrawModernBorder(e, EnterPasswordPanel);
-        }
-
-        private void DrawModernBorder(PaintEventArgs e, Panel panel)
-        {
-            e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-            var rect = panel.ClientRectangle;
-            rect.Width -= 1;
-            rect.Height -= 1;
-
-            using (var path = RoundedRect(rect, 20))
-            using (var pen = new System.Drawing.Pen(Color.FromArgb(120, 160, 210), 1.5f))
-            {
-                pen.LineJoin = System.Drawing.Drawing2D.LineJoin.Round;
-                e.Graphics.DrawPath(pen, path);
-            }
-        }
-
-        private void LogIns_MouseEnter(object sender, EventArgs e)
-        {
-            LogIns.BackColor = System.Drawing.Color.FromArgb(50, 70, 160);
-        }
-
-        private void LogIns_MouseLeave(object sender, EventArgs e)
-        {
-            LogIns.BackColor = System.Drawing.Color.FromArgb(32, 47, 124);
-        }
+        private void LogIns_MouseEnter(object sender, EventArgs e) => LogIns.BackColor = UiTheme.PrimaryHover;
+        private void LogIns_MouseLeave(object sender, EventArgs e) => LogIns.BackColor = UiTheme.Primary;
 
         private void ShowPasswordButton_Click(object sender, EventArgs e)
         {
@@ -150,7 +166,7 @@ namespace AlagaTrack
             UserSession.Username = username;
             UserSession.Role = role;
 
-            Form1 dashboard = new Form1();
+            var dashboard = new Form1();
             dashboard.FormClosed += (_, _) => Close();
             dashboard.Show();
             Hide();

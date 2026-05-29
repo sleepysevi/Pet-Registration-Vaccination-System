@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniFrames")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f6eff642186cd73ee04c7d88e35cfbeff5f3011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7978661f2a2760678d4f25b5e8e8cde427c22442")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniFrames")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniFrames")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

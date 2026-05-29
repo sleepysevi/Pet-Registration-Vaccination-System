@@ -2,30 +2,17 @@
 {
     partial class LoginPage
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
@@ -49,153 +36,129 @@
             // pictureBox1
             // 
             pictureBox1.Image = global::AlagaTrack.LoginSection.Properties.Resources.OriginalAlagaTrackLogo;
-            pictureBox1.Location = new Point(201, 101);
+            pictureBox1.Location = new Point(192, 72);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(598, 143);
+            pictureBox1.Size = new Size(600, 120);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // LOGIN
             // 
             LOGIN.AutoSize = true;
-            LOGIN.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Pixel);
+            LOGIN.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             LOGIN.ForeColor = Color.FromArgb(32, 47, 124);
-            LOGIN.Location = new Point(448, 244);
+            LOGIN.Location = new Point(436, 200);
             LOGIN.Name = "LOGIN";
-            LOGIN.Size = new Size(112, 36);
             LOGIN.TabIndex = 1;
             LOGIN.Text = "LOGIN";
             // 
             // Username
             // 
             Username.AutoSize = true;
-            Username.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            Username.Location = new Point(367, 280);
+            Username.Font = new Font("Segoe UI", 10F);
+            Username.Location = new Point(342, 248);
             Username.Name = "Username";
-            Username.Size = new Size(83, 20);
-            Username.TabIndex = 3;
             Username.Text = "Username";
-            // 
-            // contextMenuStrip1
-            // 
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
-            // 
-            // contextMenuStrip2
-            // 
-            contextMenuStrip2.Name = "contextMenuStrip2";
-            contextMenuStrip2.Size = new Size(61, 4);
             // 
             // EnterUsernamePanel
             // 
-            EnterUsernamePanel.BackColor = Color.FromArgb(217, 217, 217);
+            EnterUsernamePanel.BackColor = Color.FromArgb(243, 244, 246);
             EnterUsernamePanel.Controls.Add(EnterUsernameTextBox);
-            EnterUsernamePanel.Location = new Point(361, 300);
+            EnterUsernamePanel.Location = new Point(342, 270);
             EnterUsernamePanel.Name = "EnterUsernamePanel";
-            EnterUsernamePanel.Size = new Size(279, 45);
-            EnterUsernamePanel.TabIndex = 7;
+            EnterUsernamePanel.Size = new Size(300, 44);
             // 
             // EnterUsernameTextBox
             // 
-            EnterUsernameTextBox.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular);
-            EnterUsernameTextBox.BackColor = Color.FromArgb(217, 217, 217);
-            EnterUsernameTextBox.Location = new Point(12, 13);
-            EnterUsernameTextBox.Name = "EnterUsernameTextBox";
-            EnterUsernameTextBox.Size = new Size(279, 55);
-            EnterUsernameTextBox.TabIndex = 0;
-            EnterUsernameTextBox.TextAlign = HorizontalAlignment.Left;
+            EnterUsernameTextBox.BackColor = Color.FromArgb(243, 244, 246);
             EnterUsernameTextBox.BorderStyle = BorderStyle.None;
-
+            EnterUsernameTextBox.Font = new Font("Segoe UI", 11F);
+            EnterUsernameTextBox.Location = new Point(12, 11);
+            EnterUsernameTextBox.Name = "EnterUsernameTextBox";
+            EnterUsernameTextBox.Size = new Size(276, 27);
+            EnterUsernameTextBox.TabIndex = 0;
             // 
             // Password
             // 
             Password.AutoSize = true;
-            Password.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            Password.Location = new Point(367, 351);
+            Password.Font = new Font("Segoe UI", 10F);
+            Password.Location = new Point(342, 322);
             Password.Name = "Password";
-            Password.Size = new Size(78, 20);
-            Password.TabIndex = 8;
             Password.Text = "Password";
             // 
             // EnterPasswordPanel
             // 
-            EnterPasswordPanel.BackColor = Color.FromArgb(217, 217, 217);
-            // add textbox first so it does not cover the show-password button
+            EnterPasswordPanel.BackColor = Color.FromArgb(243, 244, 246);
             EnterPasswordPanel.Controls.Add(EnterPasswordTextBox);
             EnterPasswordPanel.Controls.Add(ShowPasswordButton);
-            EnterPasswordPanel.Location = new Point(361, 371);
+            EnterPasswordPanel.Location = new Point(342, 344);
             EnterPasswordPanel.Name = "EnterPasswordPanel";
-            EnterPasswordPanel.Size = new Size(279, 45);
-            EnterPasswordPanel.TabIndex = 9;
+            EnterPasswordPanel.Size = new Size(300, 44);
             // 
             // EnterPasswordTextBox
             // 
-            EnterPasswordTextBox.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular);
-            EnterPasswordTextBox.BackColor = Color.FromArgb(217, 217, 217);
-            EnterPasswordTextBox.Location = new Point(12, 13);
-            EnterPasswordTextBox.Name = "EnterPasswordTextBox";
-            EnterPasswordTextBox.Size = new Size(200, 25);
-            EnterPasswordTextBox.TabIndex = 0;
-            EnterPasswordTextBox.TextAlign = HorizontalAlignment.Left;
+            EnterPasswordTextBox.BackColor = Color.FromArgb(243, 244, 246);
             EnterPasswordTextBox.BorderStyle = BorderStyle.None;
+            EnterPasswordTextBox.Font = new Font("Segoe UI", 11F);
+            EnterPasswordTextBox.Location = new Point(12, 11);
+            EnterPasswordTextBox.Name = "EnterPasswordTextBox";
+            EnterPasswordTextBox.Size = new Size(210, 27);
+            EnterPasswordTextBox.TabIndex = 0;
             EnterPasswordTextBox.UseSystemPasswordChar = true;
-
             // 
             // ShowPasswordButton
+            // 
             ShowPasswordButton = new Button();
+            ShowPasswordButton.BackColor = Color.FromArgb(243, 244, 246);
+            ShowPasswordButton.FlatAppearance.BorderSize = 0;
             ShowPasswordButton.FlatStyle = FlatStyle.Flat;
-            ShowPasswordButton.FlatAppearance.BorderSize = 1;
-            ShowPasswordButton.FlatAppearance.BorderColor = Color.FromArgb(120, 160, 210);
-            ShowPasswordButton.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Pixel);
+            ShowPasswordButton.Font = new Font("Segoe UI", 9F);
             ShowPasswordButton.ForeColor = Color.FromArgb(32, 47, 124);
-            ShowPasswordButton.BackColor = Color.FromArgb(217, 217, 217);
-            ShowPasswordButton.Location = new Point(210, 10);
+            ShowPasswordButton.Location = new Point(228, 9);
             ShowPasswordButton.Name = "ShowPasswordButton";
             ShowPasswordButton.Size = new Size(60, 26);
             ShowPasswordButton.TabIndex = 12;
             ShowPasswordButton.Text = "Show";
             ShowPasswordButton.UseVisualStyleBackColor = false;
-            ShowPasswordButton.TextAlign = ContentAlignment.MiddleCenter;
             ShowPasswordButton.Click += ShowPasswordButton_Click;
-
             // 
             // ForgotPassword
             // 
             ForgotPassword.AutoSize = true;
-            ForgotPassword.Font = new Font("Microsoft Sans Serif", 15F, FontStyle.Underline, GraphicsUnit.Pixel);
-            ForgotPassword.ForeColor = Color.FromArgb(10, 10, 10);
-            ForgotPassword.Location = new Point(367, 420);
-            ForgotPassword.Name = "ForgotPassword";
-            ForgotPassword.Size = new Size(131, 18);
-            ForgotPassword.TabIndex = 10;
-            ForgotPassword.Text = "Forgot Password?";
             ForgotPassword.Cursor = Cursors.Hand;
+            ForgotPassword.Font = new Font("Segoe UI", 9F, FontStyle.Underline);
+            ForgotPassword.ForeColor = Color.FromArgb(71, 85, 105);
+            ForgotPassword.Location = new Point(511, 396);
+            ForgotPassword.Name = "ForgotPassword";
+            ForgotPassword.Text = "Forgot Password?";
             // 
             // LogIns
             // 
             LogIns.BackColor = Color.FromArgb(32, 47, 124);
-            LogIns.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
-            LogIns.ForeColor = Color.WhiteSmoke;
-            LogIns.Location = new Point(448, 448);
+            LogIns.FlatStyle = FlatStyle.Flat;
+            LogIns.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            LogIns.ForeColor = Color.White;
+            LogIns.Location = new Point(342, 424);
             LogIns.Name = "LogIns";
-            LogIns.Size = new Size(104, 40);
+            LogIns.Size = new Size(300, 44);
             LogIns.TabIndex = 11;
             LogIns.Text = "LOGIN";
             LogIns.UseVisualStyleBackColor = false;
             // 
             // LoginPage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(245, 247, 250);
             ClientSize = new Size(984, 561);
-            Controls.Add(LogIns);
-            Controls.Add(ForgotPassword);
-            Controls.Add(EnterPasswordPanel);
-            Controls.Add(Password);
-            Controls.Add(EnterUsernamePanel);
-            Controls.Add(Username);
-            Controls.Add(LOGIN);
             Controls.Add(pictureBox1);
+            Controls.Add(LOGIN);
+            Controls.Add(Username);
+            Controls.Add(EnterUsernamePanel);
+            Controls.Add(Password);
+            Controls.Add(EnterPasswordPanel);
+            Controls.Add(ForgotPassword);
+            Controls.Add(LogIns);
             Name = "LoginPage";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

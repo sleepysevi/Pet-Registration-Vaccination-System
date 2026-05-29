@@ -25,8 +25,7 @@ namespace AlagaTrackFrontEnd
         {
             base.OnShown(e);
             if (UiRoundHelper.IsInDesignMode(this)) return;
-            UiRoundHelper.ApplyRoundedTheme(this);
-            UiRoundHelper.ConfigureTableBehavior(this);
+            UiRoundHelper.ApplyDataViewChrome(this);
 
             card1.Invalidate();
             card2.Invalidate();

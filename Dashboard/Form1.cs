@@ -225,17 +225,14 @@ namespace AlagaTrackFrontEnd
 
         private void panelContentHost_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void panelTop_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void lblPageTitle_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

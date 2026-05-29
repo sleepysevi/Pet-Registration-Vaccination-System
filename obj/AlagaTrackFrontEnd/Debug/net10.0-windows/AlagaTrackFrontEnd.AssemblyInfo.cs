@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlagaTrackFrontEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f6eff642186cd73ee04c7d88e35cfbeff5f3011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7978661f2a2760678d4f25b5e8e8cde427c22442")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlagaTrackFrontEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlagaTrackFrontEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -181,23 +181,27 @@ namespace MainPages
 
             Controls.Add(ProfileIconBox);
         }
-        private Label CreateTableText(string text)
+        private Label CreateTableText(string text, bool isHeader = false)
         {
             return new Label
             {
                 Text = text,
-                Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Bold),
-                ForeColor = Color.Black,
+                Font = new Font("Segoe UI", isHeader ? 9F : 8.25F, isHeader ? FontStyle.Bold : FontStyle.Regular),
+                ForeColor = isHeader ? UiTheme.TextPrimary : UiTheme.TextSecondary,
                 Dock = DockStyle.Fill,
                 TextAlign = ContentAlignment.MiddleCenter,
-                BackColor = Color.White
+                BackColor = Color.Transparent,
+                UseMnemonic = false,
+                AutoEllipsis = true,
+                Margin = Padding.Empty,
+                Padding = Padding.Empty
             };
         }
         private void CreateRecentPetsPanel()
         {
             RecentPetsPanel = new Panel
             {
-                Size = new Size(460, 260),
+                Size = new Size(460, 300),
                 Location = new Point(ChartContainer.Right + 20, ChartContainer.Top),
                 BackColor = Color.White
             };
@@ -225,13 +229,18 @@ namespace MainPages
             // TABLE
             RecentPetsTable = new TableLayoutPanel
             {
-                Size = new Size(440, 170),
+                Size = new Size(440, 232),
                 Location = new Point(10, 40),
                 ColumnCount = 5,
                 RowCount = 9,
-                CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
+                CellBorderStyle = TableLayoutPanelCellBorderStyle.None,
+                BackColor = Color.White
             };
             RecentPetsTable.ColumnStyles.Clear();
+            RecentPetsTable.RowStyles.Clear();
+            RecentPetsTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 34F));
+            for (int i = 1; i < 9; i++)
+                RecentPetsTable.RowStyles.Add(new RowStyle(SizeType.Absolute, 24F));
 
             RecentPetsTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 15)); // ID
             RecentPetsTable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25)); // NAME
@@ -242,7 +251,7 @@ namespace MainPages
             string[] headers = { "ID", "NAME", "OWNER", "LAST VACCINE", "STATUS" };
 
             for (int c = 0; c < 5; c++)
-                RecentPetsTable.Controls.Add(CreateTableText(headers[c]), c, 0);
+                RecentPetsTable.Controls.Add(CreateTableText(headers[c], isHeader: true), c, 0);
 
             for (int r = 1; r < 9; r++)
                 for (int c = 0; c < 5; c++)
@@ -254,7 +263,7 @@ namespace MainPages
             SeeMorePanel = new Panel
             {
                 Size = new Size(140, 30),
-                BackColor = Color.FromArgb(254, 207, 106)
+                BackColor = Color.FromArgb(254, 207, 106) // accent muted
             };
 
             ApplyPanelStyle(SeeMorePanel);
@@ -262,7 +271,8 @@ namespace MainPages
             SeeMoreLabel = new Label
             {
                 Text = "See more pets",
-                Font = new Font("Inter", 10F, FontStyle.Bold),
+                Font = new Font("Segoe UI", 9.5F, FontStyle.Bold),
+                ForeColor = UiTheme.TextPrimary,
                 AutoSize = true
             };
 
@@ -275,7 +285,7 @@ namespace MainPages
 
             SeeMorePanel.Location = new Point(
                 (RecentPetsPanel.Width - SeeMorePanel.Width) / 2,
-                220
+                278
             );
 
             RecentPetsPanel.Controls.Add(SeeMorePanel);
@@ -291,11 +301,21 @@ namespace MainPages
         private void RecentPetsTable_CellPaint(object sender, TableLayoutCellPaintEventArgs e)
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-            using (Pen p = new Pen(Color.Black, 1))
+            if (e.Row == 0)
             {
-                Rectangle r = e.CellBounds;
-                e.Graphics.DrawRectangle(p, r);
+                using var hb = new SolidBrush(UiTheme.TableHeaderBg);
+                e.Graphics.FillRectangle(hb, e.CellBounds);
+            }
+            else if (e.Row % 2 == 0)
+            {
+                using var ab = new SolidBrush(UiTheme.TableRowAlt);
+                e.Graphics.FillRectangle(ab, e.CellBounds);
+            }
+            if (e.Row > 0)
+            {
+                using var line = new Pen(UiTheme.TableGridLine, 1f);
+                int y = e.CellBounds.Bottom - 1;
+                e.Graphics.DrawLine(line, e.CellBounds.Left, y, e.CellBounds.Right, y);
             }
         }
 
@@ -369,9 +389,6 @@ namespace MainPages
                     rect.Width - paddingLeft - paddingRight,
                     rect.Height - paddingTop - paddingBottom
                 );
-
-                // ================= DROP SHADOW =================
-                DrawChartShadow(g, rect);
 
                 // ================= ROUNDED BACKGROUND =================
                 using (Brush bg = new SolidBrush(Color.White))
@@ -475,46 +492,19 @@ namespace MainPages
                     points[i] = new PointF(x, y);
                 }
 
-                using (Pen linePen = new Pen(Color.DodgerBlue, 3))
-                {
+                Color lineColor = UiTheme.Primary;
+                using (Pen linePen = new Pen(lineColor, 2.5f) { LineJoin = LineJoin.Round })
                     g.DrawLines(linePen, points);
-                }
-
-                using (Brush dot = new SolidBrush(Color.DodgerBlue))
+                using (Brush dot = new SolidBrush(lineColor))
+                using (Pen outline = new Pen(Color.White, 1.5f))
                 {
                     foreach (var p in points)
-                        g.FillEllipse(dot, p.X - 3, p.Y - 3, 6, 6);
-                }
-            }
-
-            // ================= DROP SHADOW =================
-            private void DrawChartShadow(Graphics g, Rectangle rect)
-            {
-                int blur = 10;
-                int offsetY = 5;
-                int baseAlpha = 10;
-
-                for (int i = 0; i < blur; i++)
-                {
-                    int alpha = (int)(baseAlpha * (1f - (i / (float)blur)));
-
-                    using (Brush b = new SolidBrush(Color.FromArgb(alpha, 0, 0, 0)))
                     {
-                        Rectangle shadow = new Rectangle(
-                            rect.X + i,
-                            rect.Y + offsetY + i,
-                            rect.Width - (i * 2),
-                            rect.Height - (i * 2)
-                        );
-
-                        using (GraphicsPath path = RoundedRect(shadow, radius))
-                        {
-                            g.FillPath(b, path);
-                        }
+                        g.FillEllipse(dot, p.X - 4, p.Y - 4, 8, 8);
+                        g.DrawEllipse(outline, p.X - 4, p.Y - 4, 8, 8);
                     }
                 }
             }
-
 
             // ================= ROUNDED RECT =================
             private GraphicsPath RoundedRect(Rectangle rect, int radius)
@@ -540,15 +530,18 @@ namespace MainPages
         private void ApplyPanelStyle(Panel p)
         {
             if (p == null) return;
-
+            p.BackColor = UiTheme.Surface;
             p.Paint += (s, e) =>
             {
                 e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
-                using (GraphicsPath path = RoundedRect(p.ClientRectangle, radius))
-                {
-                    p.Region = new Region(path);
-                }
+                Rectangle rect = p.ClientRectangle;
+                rect.Width -= 1;
+                rect.Height -= 1;
+                using var path = RoundedRect(rect, radius);
+                using var fill = new SolidBrush(UiTheme.Surface);
+                using var border = new Pen(UiTheme.TableGridLine, 1f);
+                e.Graphics.FillPath(fill, path);
+                e.Graphics.DrawPath(border, path);
             };
         }
 
@@ -558,20 +551,12 @@ namespace MainPages
         private void Header_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
-
             Rectangle rect = Header.ClientRectangle;
-
-            using (LinearGradientBrush brush = new LinearGradientBrush(
-                rect,
-                Color.FromArgb(210, 227, 255),
-                Color.FromArgb(63, 94, 197),
-                LinearGradientMode.Vertical))
-            {
-                using (GraphicsPath path = RoundedRect(rect, 22))
-                {
-                    e.Graphics.FillPath(brush, path);
-                }
-            }
+            rect.Width -= 1;
+            rect.Height -= 1;
+            using var brush = new LinearGradientBrush(rect, Color.FromArgb(45, 62, 145), UiTheme.Primary, LinearGradientMode.Vertical);
+            using var path = RoundedRect(rect, 22);
+            e.Graphics.FillPath(brush, path);
         }
 
         // ================= ROUND =================

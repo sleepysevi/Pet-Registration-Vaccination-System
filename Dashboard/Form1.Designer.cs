@@ -34,7 +34,6 @@
             this.panelTop = new System.Windows.Forms.Panel();
             this.lblPageTitle = new System.Windows.Forms.Label();
             this.panelContentHost = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnHamburger = new System.Windows.Forms.Button();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
@@ -56,8 +55,7 @@
             // 
             // panelTop
             // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.panelTop.Controls.Add(this.button1);
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.panelTop.Controls.Add(this.btnHamburger);
             this.panelTop.Controls.Add(this.lblPageTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -65,14 +63,13 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1000, 80);
             this.panelTop.TabIndex = 1;
-            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             // 
             // lblPageTitle
             // 
             this.lblPageTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblPageTitle.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Bold);
             this.lblPageTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(47)))), ((int)(((byte)(127)))));
-            this.lblPageTitle.Location = new System.Drawing.Point(77, -12);
+            this.lblPageTitle.Location = new System.Drawing.Point(77, 8);
             this.lblPageTitle.Name = "lblPageTitle";
             this.lblPageTitle.Size = new System.Drawing.Size(600, 100);
             this.lblPageTitle.TabIndex = 2;
@@ -82,28 +79,14 @@
             // 
             // panelContentHost
             // 
-            this.panelContentHost.BackColor = System.Drawing.Color.Transparent;
+            this.panelContentHost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.panelContentHost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelContentHost.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContentHost.ForeColor = System.Drawing.Color.Transparent;
             this.panelContentHost.Location = new System.Drawing.Point(0, 80);
             this.panelContentHost.Margin = new System.Windows.Forms.Padding(0);
             this.panelContentHost.Name = "panelContentHost";
             this.panelContentHost.Size = new System.Drawing.Size(1000, 520);
             this.panelContentHost.TabIndex = 2;
-            this.panelContentHost.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContentHost_Paint);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::AlagaTrackFrontEnd.Dashboard.Properties.Resources.Ellipse_21;
-            this.button1.Location = new System.Drawing.Point(905, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 82);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // btnHamburger
             // 
@@ -122,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panelContentHost);
             this.Controls.Add(this.panelTop);
@@ -147,7 +130,6 @@
         private System.Windows.Forms.Button btnHamburger;
         private System.Windows.Forms.Label lblPageTitle;
         private System.Windows.Forms.Panel panelContentHost;
-        private System.Windows.Forms.Button button1;
     }
 }
 

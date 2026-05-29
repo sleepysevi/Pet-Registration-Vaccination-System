@@ -198,7 +198,8 @@
             KeyFLabel6.BackColor = Color.Transparent;
             KeyFLabel6.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             KeyFLabel6.ForeColor = Color.FromArgb(30, 41, 59);
-            KeyFLabel6.Location = new Point(182, 219);
+            KeyFLabel6.Location = new Point(48, 213);
+            KeyFLabel6.UseMnemonic = false;
             KeyFLabel6.Name = "KeyFLabel6";
             KeyFLabel6.Size = new Size(251, 22);
             KeyFLabel6.TabIndex = 10;
@@ -210,7 +211,8 @@
             KeyFLabel5.BackColor = Color.Transparent;
             KeyFLabel5.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             KeyFLabel5.ForeColor = Color.FromArgb(30, 41, 59);
-            KeyFLabel5.Location = new Point(182, 189);
+            KeyFLabel5.Location = new Point(48, 183);
+            KeyFLabel5.UseMnemonic = false;
             KeyFLabel5.Name = "KeyFLabel5";
             KeyFLabel5.Size = new Size(263, 22);
             KeyFLabel5.TabIndex = 9;
@@ -222,7 +224,8 @@
             KeyFLabel4.BackColor = Color.Transparent;
             KeyFLabel4.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             KeyFLabel4.ForeColor = Color.FromArgb(30, 41, 59);
-            KeyFLabel4.Location = new Point(182, 160);
+            KeyFLabel4.Location = new Point(48, 153);
+            KeyFLabel4.UseMnemonic = false;
             KeyFLabel4.Name = "KeyFLabel4";
             KeyFLabel4.Size = new Size(201, 22);
             KeyFLabel4.TabIndex = 8;
@@ -234,7 +237,8 @@
             KeyFLabel3.BackColor = Color.Transparent;
             KeyFLabel3.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             KeyFLabel3.ForeColor = Color.FromArgb(30, 41, 59);
-            KeyFLabel3.Location = new Point(182, 131);
+            KeyFLabel3.Location = new Point(48, 123);
+            KeyFLabel3.UseMnemonic = false;
             KeyFLabel3.Name = "KeyFLabel3";
             KeyFLabel3.Size = new Size(222, 22);
             KeyFLabel3.TabIndex = 7;
@@ -246,7 +250,8 @@
             KeyFLabel2.BackColor = Color.Transparent;
             KeyFLabel2.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             KeyFLabel2.ForeColor = Color.FromArgb(30, 41, 59);
-            KeyFLabel2.Location = new Point(182, 101);
+            KeyFLabel2.Location = new Point(48, 93);
+            KeyFLabel2.UseMnemonic = false;
             KeyFLabel2.Name = "KeyFLabel2";
             KeyFLabel2.Size = new Size(294, 22);
             KeyFLabel2.TabIndex = 6;
@@ -258,7 +263,8 @@
             KeyFLabel1.BackColor = Color.Transparent;
             KeyFLabel1.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             KeyFLabel1.ForeColor = Color.FromArgb(30, 41, 59);
-            KeyFLabel1.Location = new Point(182, 72);
+            KeyFLabel1.Location = new Point(48, 64);
+            KeyFLabel1.UseMnemonic = false;
             KeyFLabel1.Name = "KeyFLabel1";
             KeyFLabel1.Size = new Size(172, 22);
             KeyFLabel1.TabIndex = 1;
@@ -266,13 +272,15 @@
             // 
             // KeyFeaturesText
             // 
+            KeyFeaturesText.AutoSize = true;
             KeyFeaturesText.BackColor = Color.Transparent;
-            KeyFeaturesText.Font = new Font("Microsoft Sans Serif", 27F, FontStyle.Bold, GraphicsUnit.Pixel);
-            KeyFeaturesText.Location = new Point(24, 103);
+            KeyFeaturesText.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
+            KeyFeaturesText.ForeColor = Color.FromArgb(30, 41, 59);
+            KeyFeaturesText.Location = new Point(24, 20);
             KeyFeaturesText.Name = "KeyFeaturesText";
-            KeyFeaturesText.Size = new Size(182, 100);
             KeyFeaturesText.TabIndex = 0;
             KeyFeaturesText.Text = "Key Features";
+            KeyFeaturesText.UseMnemonic = false;
             KeyFeaturesText.Click += KeyFeaturesText_Click;
             // 
             // BuiltBy
@@ -290,38 +298,42 @@
             // 
             SchoolName.AutoSize = true;
             SchoolName.BackColor = Color.Transparent;
-            SchoolName.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold);
-            SchoolName.Location = new Point(261, 91);
+            SchoolName.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            SchoolName.ForeColor = Color.FromArgb(234, 179, 8);
+            SchoolName.Location = new Point(24, 118);
             SchoolName.Name = "SchoolName";
-            SchoolName.Size = new Size(189, 25);
             SchoolName.TabIndex = 2;
             SchoolName.Text = "University of Cebu";
+            SchoolName.UseMnemonic = false;
             // 
             // TeamName
             // 
+            TeamName.AutoSize = true;
             TeamName.BackColor = Color.Transparent;
-            TeamName.Font = new Font("Microsoft Sans Serif", 30F, FontStyle.Bold, GraphicsUnit.Pixel);
-            TeamName.Location = new Point(202, 44);
+            TeamName.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            TeamName.ForeColor = Color.White;
+            TeamName.Location = new Point(24, 72);
             TeamName.Name = "TeamName";
-            TeamName.Size = new Size(271, 43);
             TeamName.TabIndex = 1;
             TeamName.Text = "PawTech Team";
+            TeamName.UseMnemonic = false;
             // 
             // Proudly
             // 
             Proudly.AutoSize = true;
             Proudly.BackColor = Color.Transparent;
-            Proudly.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Pixel);
-            Proudly.Location = new Point(24, 67);
+            Proudly.Font = new Font("Segoe UI", 11F);
+            Proudly.ForeColor = Color.FromArgb(226, 232, 240);
+            Proudly.Location = new Point(24, 36);
             Proudly.Name = "Proudly";
-            Proudly.Size = new Size(150, 25);
             Proudly.TabIndex = 0;
             Proudly.Text = "Proudly built by:";
+            Proudly.UseMnemonic = false;
             // 
             // AboutPage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
+            BackColor = Color.FromArgb(245, 247, 250);
             ClientSize = new Size(1125, 748);
             Controls.Add(BuiltBy);
             Controls.Add(KeyFeatures);

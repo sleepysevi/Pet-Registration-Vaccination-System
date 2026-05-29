@@ -4,6 +4,7 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <RootNamespace>AlagaTrackFrontEnd</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <BaseIntermediateOutputPath>obj\AlagaTrackFrontEnd\</BaseIntermediateOutputPath>
@@ -51,6 +52,7 @@
     <Compile Include="Dashboard\StaffManagementForm.cs" />
     <Compile Include="Dashboard\StaffManagementForm.Designer.cs" />
     <Compile Include="Dashboard\UiRoundHelper.cs" />
+    <Compile Include="Dashboard\UiTheme.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dashboard\Form1.resx">
